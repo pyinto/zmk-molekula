@@ -33,6 +33,7 @@ init:
 # Fetch or update ZMK and Zephyr modules inside .zmk
 update:
     cp "{{repo_dir}}/config/west.yml" "{{ws_dir}}/config/west.yml"
+    find "{{ws_dir}}" -name "index.lock" -delete 2>/dev/null || true
     {{docker_ws_run}} west update --fetch-opt=--filter=tree:0
 
 # Full setup: pull container, initialize and update west modules
