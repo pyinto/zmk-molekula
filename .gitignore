@@ -1,0 +1,12 @@
+.llm/
+
+# Local environment
+/.env
+/.envrc
+
+# Local ZMK/west workspace and build output
+/.zmk/
+/build/
+/build-results/
+/backups/
+.DS_Store
