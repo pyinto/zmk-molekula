@@ -58,6 +58,14 @@ parse_config:
       tap: $$mdi:minus-circle-outline$$
       type: none
 
+  layer_legend_map:
+    "L0 - BASE": L0
+    "L1 - SYM": L1
+    "L2 - NUM": L2
+    "L3 - CYR": L3
+    "L4 - ADJ": L4
+    "L5 - SYS": L5
+
   zmk_combos:
     combo_ui_esc:
       align: top

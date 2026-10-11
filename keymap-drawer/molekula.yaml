@@ -32,11 +32,11 @@ layers:
   - {t: ., s: '!', left: Ю}
   - {t: /, s: \}
   - $$mdi:keyboard-tab$$
-  - L1 - SYM
+  - L1
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
-  - L2 - NUM
-  - {t: L4 - ADJ, h: '$$mdi:gesture-tap-hold$$'}
+  - L2
+  - {t: L4, h: '$$mdi:gesture-tap-hold$$'}
   L1 - SYM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -236,6 +236,6 @@ combos:
   l: [L0 - BASE]
   a: top
 - p: [32, 33]
-  k: L5 - SYS
+  k: L5
   l: [L5 - SYS]
   a: bottom

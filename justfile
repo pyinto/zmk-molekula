@@ -177,6 +177,7 @@ kd_config        := kd_dir / "config.yaml"
 kd_css           := kd_dir / "config.css"
 kd_merged_config := kd_dir / "config-merged.yaml"
 kd_base          := kd_dir / "molekula_base.yaml"
+kd_combos        := kd_dir / "molekula_combos.yaml"
 kd_keymap        := repo_dir / "boards" / "shields" / "molekula_tws" / "molekula_tws.keymap"
 kd_layout_json   := kd_dir / "molekula.json"
 kd_yaml          := kd_dir / "molekula.yaml"
@@ -197,7 +198,7 @@ parse-keymap: draw-config
 
 # Draw keymap SVG
 draw: parse-keymap
-    uvx --from keymap-drawer keymap -c "{{kd_merged_config}}" draw -j "{{kd_layout_json}}" "{{kd_yaml}}" -o "{{kd_svg}}"
+    uvx --from keymap-drawer keymap -c "{{kd_merged_config}}" draw -j "{{kd_layout_json}}" "{{kd_yaml}}" "{{kd_combos}}" -o "{{kd_svg}}"
     rm -f "{{kd_merged_config}}"
     @echo "Generated {{kd_svg}}"
 

@@ -514,12 +514,13 @@ path.combo {
 
 /* text size for combo boxes (non layer activator) */
 .combo.tap {
-    font-size : 32px;
+    font-size : 16px;
+    font-weight: bold;
 }
 
 .combo.tap.layer-activator {
-    /*fill: var(--color--key--text--held);*/
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
