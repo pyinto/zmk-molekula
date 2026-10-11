@@ -76,7 +76,7 @@ parse_config:
     combo_lp_quote:
       align: top
       layers: ["L0 - BASE"]
-    combo_l2_l4_to_l5:
+    combo_num_cyr_sys:
       align: bottom
       layers: ["L5 - SYS"]
 
