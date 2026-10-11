@@ -157,19 +157,21 @@ layers:
   - PLUS
   - t: $$mdi:minus-circle-outline$$
     type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - t: '7'
     s: '&'
   - t: '8'
     s: '*'
   - t: '9'
     s: (
-  - t: $$mdi:minus-circle-outline$$
-    type: none
   - _
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: '4'
@@ -180,13 +182,14 @@ layers:
     s: ^
   - t: '0'
     s: )
-  - .
   - t: $$mdi:backspace-reverse-outline$$
     type: backspace
   - ^
   - '%'
   - $
   - '*'
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: '1'
@@ -196,8 +199,6 @@ layers:
   - t: '3'
     s: '#'
   - '|'
-  - t: $$mdi:minus-circle-outline$$
-    type: none
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
@@ -283,10 +284,10 @@ layers:
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
   - $$mdi:play-pause$$
+  - F13
   - F7
   - F8
   - F9
-  - F10
   - t: $$mdi:minus-circle-outline$$
     type: none
   - $$mdi:apple-keyboard-control$$
@@ -295,12 +296,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - t: $$mdi:minus-circle-outline$$
     type: none
+  - F12
   - F4
   - F5
   - F6
-  - F11
-  - t: $$mdi:minus-circle-outline$$
-    type: none
+  - F10
   - t: $$mdi:minus-circle-outline$$
     type: none
   - $$mdi:brightness-4$$
@@ -308,11 +308,12 @@ layers:
   - $$mdi:volume-minus$$
   - $$mdi:volume-plus$$
   - $$mdi:volume-variant-off$$
+  - F11
   - F1
   - F2
   - F3
-  - F12
-  - $$mdi:lock-open-outline$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
@@ -331,8 +332,7 @@ layers:
     s: +
     h: '-'
   L5 - SYS:
-  - t: $$mdi:minus-circle-outline$$
-    type: none
+  - $$mdi:lock-open-outline$$
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
