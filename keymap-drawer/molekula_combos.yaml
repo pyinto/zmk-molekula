@@ -1,0 +1,8 @@
+# Supplementary combos configuration for Molekula layout
+# Adds combo highlight for L3 conditional layer activation (thumbs 31 & 34)
+combos:
+  - p: [31, 34]
+    k: L3
+    l: ["L3 - CYR"]
+    a: bottom
+    dendron: true
