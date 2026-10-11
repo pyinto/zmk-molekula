@@ -83,7 +83,7 @@
                                                    &kp TAB      &mo L1       &kp ENTER          &kp SPACE    &mo L2       &sl L4
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         num_layer {
@@ -95,7 +95,7 @@
                                                   &trans       &trans       &trans             &trans       &trans       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp F15 F14 &inc_dec_kp F14 F15>;
         };
 
         sym_layer {
@@ -107,7 +107,7 @@
                                                   &trans       &trans       &trans             &trans       &trans       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp F15 F14 &inc_dec_kp F14 F15>;
         };
 
         func_layer {
@@ -119,7 +119,7 @@
                                                   &trans       &trans       &trans             &trans       &trans       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         cyr_layer {
@@ -131,7 +131,7 @@
                                                   &trans       &trans       &trans             &trans       &trans       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         sys_layer {
@@ -143,7 +143,7 @@
                                                   &trans       &trans       &trans             &bootloader  &trans       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
