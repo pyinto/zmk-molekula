@@ -403,7 +403,7 @@ text.label {
     stroke: var(--color--catppuccin--crust);
     stroke-width: 4px;
     fill: var(--color--catppuccin--subtext-1);
-    translate: 520px 0px;
+    translate: 620px 0px;
 }
 
 
@@ -633,13 +633,13 @@ rect.held, rect.combo.held {
 
 }
 
-/* Color Indicators: Thumb */
-.keypos-36,
-.keypos-37,
-.keypos-38,
-.keypos-39,
-.keypos-40,
-.keypos-41 {
+/* Color Indicators: Thumb (Molekula positions 30-35) */
+.keypos-30,
+.keypos-31,
+.keypos-32,
+.keypos-33,
+.keypos-34,
+.keypos-35 {
   --color--key--border: var(--color--thumb);
   --color--key--bg: var(--color--thumb-5);
 }
@@ -722,17 +722,57 @@ rect.held, rect.combo.held {
 
     /*--color--key--text--tap: var(--color--catppuccin--maroon);*/
 }
-.keypos-37,
-.keypos-40
+.keypos-31,
+.keypos-34
 {
   --color--key--bg: var(--color--thumb-15);
-    --key--border--width: var(--key--border--width--homerow);
+  --key--border--width: var(--key--border--width--homerow);
 }
 
-.keypos-36,
-.keypos-38,
-.keypos-39,
-.keypos-41
+.keypos-30,
+.keypos-32,
+.keypos-33,
+.keypos-35
 {
   --color--key--bg: var(--color--thumb-5);
+}
+
+/* Rotary Encoders / Knobs (Keypos 36: Left, Keypos 37: Right) */
+.keypos-36,
+.keypos-37 {
+  --color--key--border: var(--color--catppuccin--surface-2);
+  --color--key--bg: var(--color--catppuccin--mantle);
+}
+
+.keypos-36 rect.key,
+.keypos-37 rect.key {
+  rx: 50px;
+  ry: 50px;
+  stroke: var(--color--catppuccin--blue);
+  stroke-width: 2.5px;
+  stroke-dasharray: none;
+  fill: var(--color--catppuccin--surface-0);
+}
+
+.keypos-36 .tap,
+.keypos-37 .tap {
+  font-size: 14px;
+  font-weight: bold;
+  fill: var(--color--catppuccin--text);
+}
+
+.keypos-36 .shifted,
+.keypos-37 .shifted {
+  font-size: 13px;
+  font-weight: bold;
+  fill: var(--color--catppuccin--green);
+  translate: 0px 6px;
+}
+
+.keypos-36 .hold,
+.keypos-37 .hold {
+  font-size: 13px;
+  font-weight: bold;
+  fill: var(--color--catppuccin--red);
+  translate: 0px -6px;
 }
