@@ -59,10 +59,18 @@ parse_config:
       type: none
 
   zmk_combos:
-    combo_ui_esc: {align: top}
-    combo_fj_caps: {align: top}
-    combo_lp_quote: {align: top}
-    combo_l2_l4_to_l5: {align: bottom}
+    combo_ui_esc:
+      align: top
+      layers: ["L0 - BASE"]
+    combo_fj_caps:
+      align: top
+      layers: ["L0 - BASE"]
+    combo_lp_quote:
+      align: top
+      layers: ["L0 - BASE"]
+    combo_l2_l4_to_l5:
+      align: bottom
+      layers: ["L5 - SYS"]
 
   zmk_keycode_map:
     # Modifiers
@@ -312,8 +320,8 @@ draw_config:
   inner_pad_w: 2
   inner_pad_h: 2
 
-  outer_pad_w: 0
-  outer_pad_h: 0
+  outer_pad_w: 20
+  outer_pad_h: 70
 
   append_colon_to_layer_header: false
   shrink_wide_legends: 5

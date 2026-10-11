@@ -2,7 +2,7 @@
 # Overlays bilingual Cyrillic sublegends on home-row mod keys where hold-tap behaviors
 # would otherwise hide them.
 layers:
-  BASE:
+  L0 - BASE:
     - {}
     - {}
     - {}

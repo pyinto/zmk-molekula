@@ -397,16 +397,15 @@ text {
 /* Layer labels */
 text.label {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 26px;
     text-anchor: middle;
     paint-order: stroke;
     stroke: var(--color--catppuccin--crust);
+    stroke-width: 4px;
     fill: var(--color--catppuccin--subtext-1);
-    translate: 600px 75px;
+    translate: 520px 0px;
 }
-.layer-Fn text.label {
-    translate: 581px 164px;
-}
+
 
 
 /* Keys */

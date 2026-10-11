@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: molekula_tws}
 layers:
-  BASE:
+  L0 - BASE:
   - {t: W, right: Ц}
   - {t: E, right: У}
   - {t: R, right: К}
@@ -32,12 +32,12 @@ layers:
   - {t: ., s: '!', left: Ю}
   - {t: /, s: \}
   - $$mdi:keyboard-tab$$
-  - SYM
+  - L1 - SYM
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
-  - NUM
-  - {t: ADJ, h: '$$mdi:gesture-tap-hold$$'}
-  SYM:
+  - L2 - NUM
+  - {t: L4 - ADJ, h: '$$mdi:gesture-tap-hold$$'}
+  L1 - SYM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '@'
@@ -74,7 +74,7 @@ layers:
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
-  NUM:
+  L2 - NUM:
   - {t: '=', s: +}
   - {t: '-', s: _}
   - PLUS
@@ -111,7 +111,7 @@ layers:
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
   - {type: held}
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
-  CYR:
+  L3 - CYR:
   - Ї
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -148,7 +148,7 @@ layers:
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
   - {type: held}
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
-  ADJ:
+  L4 - ADJ:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
@@ -185,7 +185,7 @@ layers:
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
   - {t: '$$mdi:layers-triple-outline$$', type: trans}
   - {type: held}
-  SYS:
+  L5 - SYS:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -225,13 +225,17 @@ layers:
 combos:
 - p: [5, 6]
   k: $$mdi:keyboard-esc$$
+  l: [L0 - BASE]
   a: top
 - p: [12, 15]
   k: $$mdi:apple-keyboard-caps$$
+  l: [L0 - BASE]
   a: top
 - p: [17, 18]
   k: {t: '''', s: '"', left: Э}
+  l: [L0 - BASE]
   a: top
 - p: [32, 33]
-  k: SYS
+  k: L5 - SYS
+  l: [L5 - SYS]
   a: bottom
