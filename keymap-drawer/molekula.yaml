@@ -303,10 +303,14 @@ layers:
   - F10
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - $$mdi:brightness-4$$
-  - $$mdi:brightness-7$$
-  - $$mdi:volume-minus$$
-  - $$mdi:volume-plus$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - $$mdi:volume-variant-off$$
   - F11
   - F1
@@ -411,13 +415,6 @@ combos:
   - 5
   - 6
   k: $$mdi:keyboard-esc$$
-  l:
-  - L0 - BASE
-  a: top
-- p:
-  - 12
-  - 15
-  k: $$mdi:apple-keyboard-caps$$
   l:
   - L0 - BASE
   a: top
