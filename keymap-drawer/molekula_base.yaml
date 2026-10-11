@@ -1,0 +1,41 @@
+# Base keymap template for Molekula 36-key layout (used by keymap-drawer with -b)
+# Overlays bilingual Cyrillic sublegends on home-row mod keys where hold-tap behaviors
+# would otherwise hide them.
+layers:
+  BASE:
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {right: Ф}
+    - {left: І, right: Ы}
+    - {right: В}
+    - {right: А}
+    - {}
+    - {}
+    - {right: О}
+    - {right: Л}
+    - {right: Д}
+    - {left: Х, right: З}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
