@@ -494,8 +494,8 @@ draw_config:
   line_spacing: 1.0
 
   # Combo box dimensions
-  combo_w: 45
-  combo_h: 45
+  combo_w: 55
+  combo_h: 55
 
   # Padding from edge of cap
   small_pad: 8
