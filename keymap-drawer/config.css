@@ -403,7 +403,7 @@ text.label {
     stroke: var(--color--catppuccin--crust);
     stroke-width: 4px;
     fill: var(--color--catppuccin--subtext-1);
-    translate: 620px 0px;
+    translate: 600px 0px;
 }
 
 
@@ -493,34 +493,36 @@ path.combo {
     stroke: var(--color--combo--dendron);
     fill: none;
 }
+/* Combo Legends: text bigger, icons smaller, with dedicated offsets */
 .combo.tap {
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: bold;
 }
-.combo.shifted {
-    font-size: 13px;
-    translate: -9px -2px;
-}
-.combo.shifted.glyph {
-    translate: -9px -3px;
+.combo.tap.layer-activator {
+    font-size: 22px;
+    font-weight: bold;
 }
 .combo.hold {
-    font-size: 16px;
-    translate: 0 0;
+    font-size: 22px;
+    translate: 0px 3px;
+    /*font-weight: bold;*/
+}
+.combo.shifted {
+    font-size: 11px;
+    translate: 0px -4px;
+}
+.combo.shifted.glyph,
+use.combo.shifted {
+    translate: 0px -3px;
 }
 
-
-
-/*todo change size for glyph for normal combos */
-
-/* text size for combo boxes (non layer activator) */
-.combo.tap {
-    font-size : 16px;
-    font-weight: bold;
-}
-
-.combo.tap.layer-activator {
-    font-size: 16px;
-    font-weight: bold;
+/* TODO: broken! */
+/* Make combo icons smaller without affecting normal keys */
+/*use.combo,
+.combo use {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.75);*/
 }
 
 
@@ -691,18 +693,18 @@ rect.held, rect.combo.held, .key.held rect.key {
 /* Rotary Encoders / Knobs (Keypos 36: Left, Keypos 37: Right) */
 .keypos-36,
 .keypos-37 {
-  --color--key--border: var(--color--catppuccin--surface-2);
-  --color--key--bg: var(--color--catppuccin--mantle);
+  --color--key--border: var(--color--index);
+  --color--key--bg: var(--color--index-20);
 }
 
 .keypos-36 rect.key,
 .keypos-37 rect.key {
   rx: 50px;
   ry: 50px;
-  stroke: var(--color--catppuccin--blue);
+  stroke: var(--color--index);
   stroke-width: 2.5px;
   stroke-dasharray: none;
-  fill: var(--color--catppuccin--surface-0);
+  fill: var(--color--index-20);
 }
 
 .keypos-36 .tap,

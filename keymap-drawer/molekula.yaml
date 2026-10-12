@@ -89,7 +89,7 @@ layers:
     h: SYM
     s: $$mdi:layers$$
   - t: L4
-    h: $$mdi:gesture-tap-hold$$
+    h: ADJ
     s: $$mdi:layers$$
   - t: $$mdi:brightness-6$$
     s: +
@@ -147,14 +147,18 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
+  - t: L1
+    h: SYM
+    s: $$mdi:layers$$
+    type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: F14
-    s: F15
-  - t: F15
-    s: F14
+  - s: F14
+    t: $$mdi:desk-lamp$$
+    h: F15
+  - s: F15
+    t: $$mdi:desk-lamp$$
+    h: F14
   L2 - NUM:
   - '='
   - '-'
@@ -196,6 +200,10 @@ layers:
   - '|'
   - t: $$mdi:layers-triple-outline$$
     type: trans
+  - t: L2
+    h: NUM
+    s: $$mdi:layers$$
+    type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
@@ -204,12 +212,12 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: F14
-    s: F15
-  - t: F15
-    s: F14
+  - s: F14
+    t: $$mdi:desk-lamp$$
+    h: F15
+  - s: F15
+    t: $$mdi:desk-lamp$$
+    h: F14
   L3 - CYR:
   - Ї
   - t: $$mdi:minus-circle-outline$$
@@ -260,14 +268,18 @@ layers:
     type: none
   - t: $$mdi:layers-triple-outline$$
     type: trans
+  - t: L2
+    h: NUM
+    s: $$mdi:layers$$
+    type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
+  - t: L1
+    h: SYM
+    s: $$mdi:layers$$
+    type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:brightness-6$$
@@ -281,7 +293,7 @@ layers:
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
   - $$mdi:volume-variant-off$$
-  - F13
+  - $$mdi:keyboard-f12$$
   - $$mdi:keyboard-f7$$
   - $$mdi:keyboard-f8$$
   - $$mdi:keyboard-f9$$
@@ -293,24 +305,25 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - $$mdi:keyboard-f12$$
+  - $$mdi:keyboard-f11$$
   - $$mdi:keyboard-f4$$
   - $$mdi:keyboard-f5$$
   - $$mdi:keyboard-f6$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - $$mdi:keyboard-f10$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - $$mdi:keyboard-f11$$
   - $$mdi:keyboard-f1$$
   - $$mdi:keyboard-f2$$
   - $$mdi:keyboard-f3$$
@@ -326,8 +339,10 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
+  - t: L4
+    h: ADJ
+    s: $$mdi:layers$$
+    type: held
   - t: $$mdi:brightness-6$$
     s: +
     h: '-'
@@ -347,8 +362,8 @@ layers:
     s: $$mdi:bluetooth$$
   - t: $$mdi:toggle-switch$$
     s: $$mdi:usb$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
+  - t: $$mdi:ev-station$$
+    s: $$mdi:power-plug$$
   - t: $$mdi:lock-open$$
     s: $$mdi:alpha-s-circle$$
   - t: $$mdi:backup-restore$$
@@ -365,8 +380,8 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: $$mdi:ev-station$$
-    s: $$mdi:power-plug$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
@@ -399,16 +414,20 @@ layers:
     s: $$mdi:bluetooth-connect$$
   - t: $$mdi:layers-triple-outline$$
     type: trans
+  - t: L2
+    h: NUM
+    s: $$mdi:layers$$
+    type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
+  - t: L4
+    h: ADJ
+    s: $$mdi:layers$$
+    type: held
   - t: $$mdi:brightness-6$$
     s: +
     h: '-'
@@ -436,10 +455,5 @@ combos:
 - p:
   - 31
   - 35
-  k:
-    t: L5
-    h: SYS
-    s: $$mdi:layers$$
-  l:
-  - L5 - SYS
-  a: bottom
+  k: L5
+  hidden: true

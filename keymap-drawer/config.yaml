@@ -108,24 +108,29 @@ parse_config:
       hold: "SYM"
 
     "&mo L2":
-      shifted: $$mdi:layers$$
       tap: "L2"
+      shifted: $$mdi:layers$$
       hold: "NUM"
 
     "&mo L3":
-      shifted: $$mdi:layers$$
-      tap: "L3"
-      hold: "CYR"
+      tap: L3
+      # shifted: $$mdi:layers$$
+      # hold: "CYR"
 
     "&mo L4":
-      shifted: $$mdi:layers$$
       tap: "L4"
+      shifted: $$mdi:layers$$
+      hold: "ADJ"
+
+    "&sl L4":
+      tap: "L4"
+      shifted: $$mdi:layers$$
       hold: "ADJ"
 
     "&mo L5":
-      shifted: $$mdi:layers$$
-      tap: "L5"
-      hold: "SYS"
+      tap: L5
+      # shifted: $$mdi:layers$$
+      # hold: "SYS"
 
 # TODO: doesn't work...
 #     layer_legend_map:
@@ -473,8 +478,7 @@ parse_config:
       layers: ["L0 - BASE"]
 
     combo_num_cyr_sys:
-      align: bottom
-      layers: ["L5 - SYS"]
+      hidden: true
 
 
 # ---------------------------| Draw-Config |----------------------------

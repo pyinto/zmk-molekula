@@ -1,4 +1,4 @@
-<svg width="1240" height="2859" viewBox="0 0 1240 2859" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1240" height="2978" viewBox="0 0 1240 2978" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:alpha-s-circle">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-alpha-s-circle" viewBox="0 0 24 24"><path d="M11,7A2,2 0 0,0 9,9V11A2,2 0 0,0 11,13H13V15H9V17H13A2,2 0 0,0 15,15V13A2,2 0 0,0 13,11H11V9H15V7H11M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>
@@ -51,11 +51,11 @@
 <svg id="mdi:brightness-6">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-6" viewBox="0 0 24 24"><path d="M12,18V6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" /></svg>
 </svg>
+<svg id="mdi:desk-lamp">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-desk-lamp" viewBox="0 0 24 24"><path d="M10.85,2L9.18,4.5L10.32,5.25L7.14,10C7.1,10 7.05,10 7,10A2,2 0 0,0 5,12C5,12.94 5.66,13.75 6.58,13.95L10.62,20H7V22H17V20H13L8.53,13.28C8.83,12.92 9,12.47 9,12C9,11.7 8.93,11.4 8.8,11.13L12,6.37C11.78,8.05 12.75,9.89 14.45,11L18.89,4.37C17.2,3.24 15.12,3.04 13.65,3.87L10.85,2M18.33,7L16.67,9.5C17.35,9.95 18.29,9.77 18.75,9.08C19.21,8.39 19,7.46 18.33,7Z" /></svg>
+</svg>
 <svg id="mdi:ev-station">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-ev-station" viewBox="0 0 24 24"><path d="M19.77,7.23L19.78,7.22L16.06,3.5L15,4.56L17.11,6.67C16.17,7.03 15.5,7.93 15.5,9A2.5,2.5 0 0,0 18,11.5C18.36,11.5 18.69,11.42 19,11.29V18.5A1,1 0 0,1 18,19.5A1,1 0 0,1 17,18.5V14A2,2 0 0,0 15,12H14V5A2,2 0 0,0 12,3H6A2,2 0 0,0 4,5V21H14V13.5H15.5V18.5A2.5,2.5 0 0,0 18,21A2.5,2.5 0 0,0 20.5,18.5V9C20.5,8.31 20.22,7.68 19.77,7.23M18,10A1,1 0 0,1 17,9A1,1 0 0,1 18,8A1,1 0 0,1 19,9A1,1 0 0,1 18,10M8,18V13.5H6L10,6V11H12L8,18Z" /></svg>
-</svg>
-<svg id="mdi:gesture-tap-hold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-gesture-tap-hold" viewBox="0 0 24 24"><path d="M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M9,12.44V9A2,2 0 0,1 11,7A2,2 0 0,1 13,9V12.44C14.19,11.75 15,10.47 15,9A4,4 0 0,0 11,5A4,4 0 0,0 7,9C7,10.47 7.81,11.75 9,12.44Z" /></svg>
 </svg>
 <svg id="mdi:keyboard-esc">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-esc" viewBox="0 0 24 24"><path d="M1 7H7V9H3V11H7V13H3V15H7V17H1V7M11 7H15V9H11V11H13C14.11 11 15 11.9 15 13V15C15 16.11 14.11 17 13 17H9V15H13V13H11C9.9 13 9 12.11 9 11V9C9 7.9 9.9 7 11 7M19 7H21C22.11 7 23 7.9 23 9V10H21V9H19V15H21V14H23V15C23 16.11 22.11 17 21 17H19C17.9 17 17 16.11 17 15V9C17 7.9 17.9 7 19 7Z" /></svg>
@@ -702,7 +702,7 @@ text.label {
     stroke: var(--color--catppuccin--crust);
     stroke-width: 4px;
     fill: var(--color--catppuccin--subtext-1);
-    translate: 620px 0px;
+    translate: 600px 0px;
 }
 
 
@@ -792,34 +792,36 @@ path.combo {
     stroke: var(--color--combo--dendron);
     fill: none;
 }
+/* Combo Legends: text bigger, icons smaller, with dedicated offsets */
 .combo.tap {
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: bold;
 }
-.combo.shifted {
-    font-size: 13px;
-    translate: -9px -2px;
-}
-.combo.shifted.glyph {
-    translate: -9px -3px;
+.combo.tap.layer-activator {
+    font-size: 22px;
+    font-weight: bold;
 }
 .combo.hold {
-    font-size: 16px;
-    translate: 0 0;
+    font-size: 22px;
+    translate: 0px 3px;
+    /*font-weight: bold;*/
+}
+.combo.shifted {
+    font-size: 11px;
+    translate: 0px -4px;
+}
+.combo.shifted.glyph,
+use.combo.shifted {
+    translate: 0px -3px;
 }
 
-
-
-/*todo change size for glyph for normal combos */
-
-/* text size for combo boxes (non layer activator) */
-.combo.tap {
-    font-size : 16px;
-    font-weight: bold;
-}
-
-.combo.tap.layer-activator {
-    font-size: 16px;
-    font-weight: bold;
+/* TODO: broken! */
+/* Make combo icons smaller without affecting normal keys */
+/*use.combo,
+.combo use {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.75);*/
 }
 
 
@@ -990,18 +992,18 @@ rect.held, rect.combo.held, .key.held rect.key {
 /* Rotary Encoders / Knobs (Keypos 36: Left, Keypos 37: Right) */
 .keypos-36,
 .keypos-37 {
-  --color--key--border: var(--color--catppuccin--surface-2);
-  --color--key--bg: var(--color--catppuccin--mantle);
+  --color--key--border: var(--color--index);
+  --color--key--bg: var(--color--index-20);
 }
 
 .keypos-36 rect.key,
 .keypos-37 rect.key {
   rx: 50px;
   ry: 50px;
-  stroke: var(--color--catppuccin--blue);
+  stroke: var(--color--index);
   stroke-width: 2.5px;
   stroke-dasharray: none;
-  fill: var(--color--catppuccin--surface-0);
+  fill: var(--color--index-20);
 }
 
 .keypos-36 .tap,
@@ -1223,20 +1225,20 @@ rect.held, rect.combo.held, .key.held rect.key {
 <g transform="translate(882, 290)" class="key keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <text x="0" y="0" class="key tap">L4</text>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-11" y="8" height="22" width="22.0" class="key hold glyph mdi:gesture-tap-hold"/>
+<text x="0" y="30" class="key hold">ADJ</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:layers"/>
 </g>
-<g transform="translate(560, 184)" class="key keypos-36">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(544, 140)" class="key keypos-36">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:brightness-6" xlink:href="#mdi:brightness-6" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:brightness-6"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
-<g transform="translate(640, 184)" class="key keypos-37">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(656, 140)" class="key keypos-37">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:volume-high"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
 <g class="combo combopos-0">
 <path d="M880,-1 h-34 a6.0,6.0 0 0 0 -6.0,6.0 v18" class="combo"/>
@@ -1251,12 +1253,6 @@ rect.held, rect.combo.held, .key.held rect.key {
 <text x="1040" y="89" class="combo tap">&#x27;</text>
 <text x="1040" y="69" class="combo shifted">&quot;</text>
 <text x="1020" y="89" class="combo left">Э</text>
-</g>
-<g class="combo combopos-2">
-<path d="M600,301 l-166,0" class="combo"/>
-<path d="M600,301 l166,0" class="combo"/>
-<rect rx="7" ry="7" x="572" y="274" width="55" height="55" class="combo"/>
-<text x="600" y="301" class="combo tap">L3</text>
 </g>
 </g>
 </g>
@@ -1401,29 +1397,27 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(793, 301) rotate(-15.0)" class="key trans keypos-34">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(793, 301) rotate(-15.0)" class="key held keypos-34">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<text x="0" y="0" class="key held tap">L1</text>
+<text x="0" y="30" class="key held hold">SYM</text>
+<use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(882, 290)" class="key trans keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(560, 184)" class="key keypos-36">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
-<text x="0" y="0" class="key tap">F14</text>
-<text x="0" y="-42" class="key shifted">F15</text>
+<g transform="translate(544, 140)" class="key keypos-36">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
+<use href="#mdi:desk-lamp" xlink:href="#mdi:desk-lamp" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:desk-lamp"/>
+<text x="0" y="38" class="key hold">F15</text>
+<text x="0" y="-38" class="key shifted">F14</text>
 </g>
-<g transform="translate(640, 184)" class="key keypos-37">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
-<text x="0" y="0" class="key tap">F15</text>
-<text x="0" y="-42" class="key shifted">F14</text>
-</g>
-<g class="combo combopos-0">
-<path d="M600,301 l-166,0" class="combo"/>
-<path d="M600,301 l166,0" class="combo"/>
-<rect rx="7" ry="7" x="572" y="274" width="55" height="55" class="combo"/>
-<text x="600" y="301" class="combo tap">L3</text>
+<g transform="translate(656, 140)" class="key keypos-37">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
+<use href="#mdi:desk-lamp" xlink:href="#mdi:desk-lamp" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:desk-lamp"/>
+<text x="0" y="38" class="key hold">F14</text>
+<text x="0" y="-38" class="key shifted">F15</text>
 </g>
 </g>
 </g>
@@ -1555,9 +1549,11 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(407, 301) rotate(15.0)" class="key trans keypos-31">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(407, 301) rotate(15.0)" class="key held keypos-31">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<text x="0" y="0" class="key held tap">L2</text>
+<text x="0" y="30" class="key held hold">NUM</text>
+<use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(490, 335) rotate(30.0)" class="key trans keypos-32">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
@@ -1575,21 +1571,17 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(560, 184)" class="key keypos-36">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
-<text x="0" y="0" class="key tap">F14</text>
-<text x="0" y="-42" class="key shifted">F15</text>
+<g transform="translate(544, 140)" class="key keypos-36">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
+<use href="#mdi:desk-lamp" xlink:href="#mdi:desk-lamp" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:desk-lamp"/>
+<text x="0" y="38" class="key hold">F15</text>
+<text x="0" y="-38" class="key shifted">F14</text>
 </g>
-<g transform="translate(640, 184)" class="key keypos-37">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
-<text x="0" y="0" class="key tap">F15</text>
-<text x="0" y="-42" class="key shifted">F14</text>
-</g>
-<g class="combo combopos-0">
-<path d="M600,301 l-166,0" class="combo"/>
-<path d="M600,301 l166,0" class="combo"/>
-<rect rx="7" ry="7" x="572" y="274" width="55" height="55" class="combo"/>
-<text x="600" y="301" class="combo tap">L3</text>
+<g transform="translate(656, 140)" class="key keypos-37">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
+<use href="#mdi:desk-lamp" xlink:href="#mdi:desk-lamp" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:desk-lamp"/>
+<text x="0" y="38" class="key hold">F14</text>
+<text x="0" y="-38" class="key shifted">F15</text>
 </g>
 </g>
 </g>
@@ -1720,9 +1712,11 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(407, 301) rotate(15.0)" class="key trans keypos-31">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(407, 301) rotate(15.0)" class="key held keypos-31">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<text x="0" y="0" class="key held tap">L2</text>
+<text x="0" y="30" class="key held hold">NUM</text>
+<use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(490, 335) rotate(30.0)" class="key trans keypos-32">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
@@ -1732,35 +1726,37 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(793, 301) rotate(-15.0)" class="key trans keypos-34">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(793, 301) rotate(-15.0)" class="key held keypos-34">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<text x="0" y="0" class="key held tap">L1</text>
+<text x="0" y="30" class="key held hold">SYM</text>
+<use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(882, 290)" class="key trans keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(560, 184)" class="key keypos-36">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(544, 140)" class="key keypos-36">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:brightness-6" xlink:href="#mdi:brightness-6" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:brightness-6"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
-<g transform="translate(640, 184)" class="key keypos-37">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(656, 140)" class="key keypos-37">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:volume-high"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
-<g class="combo combopos-0">
-<path d="M600,301 l-166,0" class="combo"/>
-<path d="M600,301 l166,0" class="combo"/>
-<rect rx="7" ry="7" x="572" y="274" width="55" height="55" class="combo"/>
-<text x="600" y="301" class="combo tap">L3</text>
+<g class="combo combopos-1">
+<path d="M600,422 h-187 a6.0,6.0 0 0 1 -6.0,-6.0 v-88" class="combo"/>
+<path d="M600,422 h187 a6.0,6.0 0 0 0 6.0,-6.0 v-88" class="combo"/>
+<rect rx="7" ry="7" x="572" y="395" width="55" height="55" class="combo"/>
+<text x="600" y="422" class="combo tap">L3</text>
 </g>
 </g>
 </g>
-<g transform="translate(20, 1869)" class="layer-L4 - ADJ">
+<g transform="translate(20, 1929)" class="layer-L4 - ADJ">
 <text x="0" y="35" class="label" id="L4---ADJ">L4 - ADJ</text>
 <g transform="translate(0, 70)">
 <g transform="translate(200, 50)" class="key keypos-0">
@@ -1781,7 +1777,7 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(760, 60)" class="key keypos-4">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<text x="0" y="0" class="key tap">F13</text>
+<use href="#mdi:keyboard-f12" xlink:href="#mdi:keyboard-f12" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:keyboard-f12"/>
 </g>
 <g transform="translate(840, 50)" class="key keypos-5">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1821,7 +1817,7 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(760, 140)" class="key keypos-14">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:keyboard-f12" xlink:href="#mdi:keyboard-f12" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:keyboard-f12"/>
+<use href="#mdi:keyboard-f11" xlink:href="#mdi:keyboard-f11" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:keyboard-f11"/>
 </g>
 <g transform="translate(840, 130)" class="key keypos-15">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1835,9 +1831,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <use href="#mdi:keyboard-f6" xlink:href="#mdi:keyboard-f6" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:keyboard-f6"/>
 </g>
-<g transform="translate(1080, 150)" class="key keypos-18">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:keyboard-f10" xlink:href="#mdi:keyboard-f10" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:keyboard-f10"/>
+<g transform="translate(1080, 150)" class="key none keypos-18">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(1160, 150)" class="key none keypos-19">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
@@ -1865,7 +1861,7 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(760, 220)" class="key keypos-25">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:keyboard-f11" xlink:href="#mdi:keyboard-f11" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:keyboard-f11"/>
+<use href="#mdi:keyboard-f10" xlink:href="#mdi:keyboard-f10" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:keyboard-f10"/>
 </g>
 <g transform="translate(840, 210)" class="key keypos-26">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1903,31 +1899,27 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(882, 290)" class="key trans keypos-35">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(882, 290)" class="key held keypos-35">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<text x="0" y="0" class="key held tap">L4</text>
+<text x="0" y="30" class="key held hold">ADJ</text>
+<use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
-<g transform="translate(560, 184)" class="key keypos-36">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(544, 140)" class="key keypos-36">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:brightness-6" xlink:href="#mdi:brightness-6" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:brightness-6"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
-<g transform="translate(640, 184)" class="key keypos-37">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(656, 140)" class="key keypos-37">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:volume-high"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
-</g>
-<g class="combo combopos-0">
-<path d="M600,301 l-166,0" class="combo"/>
-<path d="M600,301 l166,0" class="combo"/>
-<rect rx="7" ry="7" x="572" y="274" width="55" height="55" class="combo"/>
-<text x="600" y="301" class="combo tap">L3</text>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
 </g>
 </g>
-<g transform="translate(20, 2329)" class="layer-L5 - SYS">
+<g transform="translate(20, 2389)" class="layer-L5 - SYS">
 <text x="0" y="35" class="label" id="L5---SYS">L5 - SYS</text>
 <g transform="translate(0, 70)">
 <g transform="translate(200, 50)" class="key none keypos-0">
@@ -1956,9 +1948,10 @@ rect.held, rect.combo.held, .key.held rect.key {
 <use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:toggle-switch"/>
 <use href="#mdi:usb" xlink:href="#mdi:usb" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:usb"/>
 </g>
-<g transform="translate(920, 40)" class="key none keypos-6">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(920, 40)" class="key keypos-6">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
+<use href="#mdi:ev-station" xlink:href="#mdi:ev-station" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:ev-station"/>
+<use href="#mdi:power-plug" xlink:href="#mdi:power-plug" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:power-plug"/>
 </g>
 <g transform="translate(1000, 50)" class="key keypos-7">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1992,10 +1985,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(760, 140)" class="key keypos-14">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:ev-station" xlink:href="#mdi:ev-station" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:ev-station"/>
-<use href="#mdi:power-plug" xlink:href="#mdi:power-plug" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:power-plug"/>
+<g transform="translate(760, 140)" class="key none keypos-14">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(840, 130)" class="key none keypos-15">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
@@ -2066,9 +2058,11 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(407, 301) rotate(15.0)" class="key trans keypos-31">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(407, 301) rotate(15.0)" class="key held keypos-31">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<text x="0" y="0" class="key held tap">L2</text>
+<text x="0" y="30" class="key held hold">NUM</text>
+<use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(490, 335) rotate(30.0)" class="key trans keypos-32">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
@@ -2082,35 +2076,29 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(882, 290)" class="key trans keypos-35">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(882, 290)" class="key held keypos-35">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<text x="0" y="0" class="key held tap">L4</text>
+<text x="0" y="30" class="key held hold">ADJ</text>
+<use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
-<g transform="translate(560, 184)" class="key keypos-36">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(544, 140)" class="key keypos-36">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:brightness-6" xlink:href="#mdi:brightness-6" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:brightness-6"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
-<g transform="translate(640, 184)" class="key keypos-37">
-<rect rx="7" ry="7" x="-50" y="-50" width="100" height="100" class="key"/>
+<g transform="translate(656, 140)" class="key keypos-37">
+<rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
 <use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:volume-high"/>
-<text x="0" y="42" class="key hold">-</text>
-<text x="0" y="-42" class="key shifted">+</text>
-</g>
-<g class="combo combopos-0">
-<path d="M644,342 h-231 a6.0,6.0 0 0 1 -6.0,-6.0 v-8" class="combo"/>
-<path d="M644,342 h231 a6.0,6.0 0 0 0 6.0,-6.0 v-20" class="combo"/>
-<rect rx="7" ry="7" x="617" y="315" width="55" height="55" class="combo"/>
-<text x="644" y="342" class="combo tap">L5</text>
-<text x="644" y="362" class="combo hold">SYS</text>
-<use href="#mdi:layers" xlink:href="#mdi:layers" x="634" y="323" height="21" width="21.0" class="combo shifted glyph mdi:layers"/>
+<text x="0" y="38" class="key hold">-</text>
+<text x="0" y="-38" class="key shifted">+</text>
 </g>
 <g class="combo combopos-1">
-<path d="M600,301 l-166,0" class="combo"/>
-<path d="M600,301 l166,0" class="combo"/>
-<rect rx="7" ry="7" x="572" y="274" width="55" height="55" class="combo"/>
-<text x="600" y="301" class="combo tap">L3</text>
+<path d="M644,422 h-231 a6.0,6.0 0 0 1 -6.0,-6.0 v-88" class="combo"/>
+<path d="M644,422 h231 a6.0,6.0 0 0 0 6.0,-6.0 v-100" class="combo"/>
+<rect rx="7" ry="7" x="617" y="395" width="55" height="55" class="combo"/>
+<text x="644" y="422" class="combo tap">L5</text>
 </g>
 </g>
 </g>
