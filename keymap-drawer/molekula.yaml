@@ -80,10 +80,10 @@ layers:
   - t: /
     s: \
   - $$mdi:keyboard-tab$$
-  - L1
+  - L2
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
-  - L2
+  - L1
   - t: L4
     h: $$mdi:gesture-tap-hold$$
   - t: $$mdi:brightness-6$$
@@ -136,13 +136,13 @@ layers:
   - '&'
   - t: $$mdi:layers-triple-outline$$
     type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
   - type: held
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: F14
@@ -201,13 +201,13 @@ layers:
   - '|'
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
   - type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: F14
@@ -336,7 +336,8 @@ layers:
     s: +
     h: '-'
   L5 - SYS:
-  - $$mdi:lock-open-outline$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
@@ -349,14 +350,13 @@ layers:
     s: $$mdi:usb$$
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
+  - $$mdi:lock-open-outline$$
+  - t: $$mdi:backup-restore$$
+    type: bootloader
+  - t: $$mdi:progress-download$$
+    type: bootloader
   - t: Clear
     s: $$mdi:bluetooth-off$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
@@ -376,10 +376,10 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: $$mdi:backup-restore$$
-    type: bootloader
-  - t: $$mdi:progress-download$$
-    type: bootloader
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$

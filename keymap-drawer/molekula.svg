@@ -1179,7 +1179,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(407, 301) rotate(15.0)" class="key keypos-31">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<text x="0" y="0" class="key tap">L1</text>
+<text x="0" y="0" class="key tap">L2</text>
 </g>
 <g transform="translate(490, 335) rotate(30.0)" class="key keypos-32">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1191,7 +1191,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(793, 301) rotate(-15.0)" class="key keypos-34">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<text x="0" y="0" class="key tap">L2</text>
+<text x="0" y="0" class="key tap">L1</text>
 </g>
 <g transform="translate(882, 290)" class="key keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1355,8 +1355,9 @@ rect.held, rect.combo.held {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(407, 301) rotate(15.0)" class="key held keypos-31">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<g transform="translate(407, 301) rotate(15.0)" class="key trans keypos-31">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
+<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
 <g transform="translate(490, 335) rotate(30.0)" class="key trans keypos-32">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
@@ -1366,9 +1367,8 @@ rect.held, rect.combo.held {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(793, 301) rotate(-15.0)" class="key trans keypos-34">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(793, 301) rotate(-15.0)" class="key held keypos-34">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
 </g>
 <g transform="translate(882, 290)" class="key trans keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
@@ -1525,9 +1525,8 @@ rect.held, rect.combo.held {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(407, 301) rotate(15.0)" class="key trans keypos-31">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
-<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
+<g transform="translate(407, 301) rotate(15.0)" class="key held keypos-31">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
 </g>
 <g transform="translate(490, 335) rotate(30.0)" class="key trans keypos-32">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
@@ -1537,8 +1536,9 @@ rect.held, rect.combo.held {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
 <use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
-<g transform="translate(793, 301) rotate(-15.0)" class="key held keypos-34">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
+<g transform="translate(793, 301) rotate(-15.0)" class="key trans keypos-34">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
+<use href="#mdi:layers-triple-outline" xlink:href="#mdi:layers-triple-outline" x="-12" y="-12" height="25" width="25.0" class="key trans tap glyph mdi:layers-triple-outline"/>
 </g>
 <g transform="translate(882, 290)" class="key trans keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key trans"/>
@@ -1884,9 +1884,9 @@ rect.held, rect.combo.held {
 <g transform="translate(20, 2379)" class="layer-L5 - SYS">
 <text x="0" y="35" class="label" id="L5---SYS">L5 - SYS</text>
 <g transform="translate(0, 70)">
-<g transform="translate(200, 50)" class="key keypos-0">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:lock-open-outline" xlink:href="#mdi:lock-open-outline" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:lock-open-outline"/>
+<g transform="translate(200, 50)" class="key none keypos-0">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(280, 40)" class="key none keypos-1">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
@@ -1914,22 +1914,22 @@ rect.held, rect.combo.held {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(1000, 50)" class="key none keypos-7">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(1000, 50)" class="key keypos-7">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
+<use href="#mdi:lock-open-outline" xlink:href="#mdi:lock-open-outline" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:lock-open-outline"/>
 </g>
-<g transform="translate(40, 150)" class="key keypos-8">
+<g transform="translate(40, 150)" class="key bootloader keypos-8">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key bootloader"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="-12" y="-12" height="25" width="25.0" class="key bootloader tap glyph mdi:backup-restore"/>
+</g>
+<g transform="translate(120, 150)" class="key bootloader keypos-9">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key bootloader"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="-12" y="-12" height="25" width="25.0" class="key bootloader tap glyph mdi:progress-download"/>
+</g>
+<g transform="translate(200, 130)" class="key keypos-10">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <text x="0" y="0" class="key tap">Clear</text>
 <use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:bluetooth-off"/>
-</g>
-<g transform="translate(120, 150)" class="key none keypos-9">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
-</g>
-<g transform="translate(200, 130)" class="key none keypos-10">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(280, 120)" class="key none keypos-11">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
@@ -1973,13 +1973,13 @@ rect.held, rect.combo.held {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(200, 210)" class="key bootloader keypos-21">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key bootloader"/>
-<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="-12" y="-12" height="25" width="25.0" class="key bootloader tap glyph mdi:backup-restore"/>
+<g transform="translate(200, 210)" class="key none keypos-21">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(280, 200)" class="key bootloader keypos-22">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key bootloader"/>
-<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="-12" y="-12" height="25" width="25.0" class="key bootloader tap glyph mdi:progress-download"/>
+<g transform="translate(280, 200)" class="key none keypos-22">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(360, 210)" class="key none keypos-23">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
