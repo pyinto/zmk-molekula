@@ -1677,13 +1677,13 @@ rect.held, rect.combo.held, .key.held rect.key {
 <g transform="translate(20, 1919)" class="layer-L4 - ADJ">
 <text x="0" y="35" class="label" id="L4---ADJ">L4 - ADJ</text>
 <g transform="translate(0, 70)">
-<g transform="translate(200, 50)" class="key none keypos-0">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(200, 50)" class="key keypos-0">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
+<use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:skip-previous"/>
 </g>
 <g transform="translate(280, 40)" class="key keypos-1">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:skip-previous"/>
+<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:play-pause"/>
 </g>
 <g transform="translate(360, 50)" class="key keypos-2">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1691,7 +1691,7 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(440, 60)" class="key keypos-3">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:play-pause"/>
+<use href="#mdi:volume-variant-off" xlink:href="#mdi:volume-variant-off" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:volume-variant-off"/>
 </g>
 <g transform="translate(760, 60)" class="key keypos-4">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1773,9 +1773,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(440, 220)" class="key keypos-24">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<use href="#mdi:volume-variant-off" xlink:href="#mdi:volume-variant-off" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:volume-variant-off"/>
+<g transform="translate(440, 220)" class="key none keypos-24">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(760, 220)" class="key keypos-25">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>

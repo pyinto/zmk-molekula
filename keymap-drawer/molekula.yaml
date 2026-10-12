@@ -280,11 +280,10 @@ layers:
     s: +
     h: '-'
   L4 - ADJ:
-  - t: $$mdi:minus-circle-outline$$
-    type: none
   - $$mdi:skip-previous$$
-  - $$mdi:skip-next$$
   - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - $$mdi:volume-variant-off$$
   - F13
   - F7
   - F8
@@ -312,7 +311,8 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - $$mdi:volume-variant-off$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - F11
   - F1
   - F2
