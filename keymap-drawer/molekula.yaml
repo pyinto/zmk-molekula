@@ -80,16 +80,13 @@ layers:
   - t: /
     s: \
   - $$mdi:keyboard-tab$$
-  - t: L_NUM
-    h: NUM
+  - t: NUM
     s: $$mdi:layers$$
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
-  - t: L_SYM
-    h: SYM
+  - t: SYM
     s: $$mdi:layers$$
-  - t: L_CYR
-    h: ADJ
+  - t: CYR
     s: $$mdi:layers$$
   - t: $$mdi:brightness-6$$
     s: +
@@ -147,8 +144,7 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L_SYM
-    h: SYM
+  - t: SYM
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:layers-triple-outline$$
@@ -200,8 +196,7 @@ layers:
   - '|'
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L_NUM
-    h: NUM
+  - t: NUM
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:layers-triple-outline$$
@@ -261,16 +256,14 @@ layers:
     type: none
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L_NUM
-    h: NUM
+  - t: NUM
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L_SYM
-    h: SYM
+  - t: SYM
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:layers-triple-outline$$
@@ -339,8 +332,7 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L_CYR
-    h: ADJ
+  - t: CYR
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:brightness-6$$
@@ -402,8 +394,8 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: $$mdi:numeric-1-circle$$
-    s: $$mdi:bluetooth-connect$$
+  - t: BT
+    h: '0'
   - t: $$mdi:numeric-2-circle$$
     s: $$mdi:bluetooth-connect$$
   - t: $$mdi:numeric-3-circle$$
@@ -414,8 +406,7 @@ layers:
     s: $$mdi:bluetooth-connect$$
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L_NUM
-    h: NUM
+  - t: NUM
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:layers-triple-outline$$
@@ -424,8 +415,7 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L_CYR
-    h: ADJ
+  - t: CYR
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:brightness-6$$
@@ -455,5 +445,5 @@ combos:
 - p:
   - 31
   - 35
-  k: L_SYS
+  k: SYS
   hidden: true

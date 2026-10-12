@@ -67,7 +67,7 @@ parse_config:
       # tap: Clear  # TODO: add icon
       tap: "$$mdi:lan-disconnect$$"
 
-    "&bt BT_SEL 0":
+    "&bt BT_SEL L0":
       shifted: $$mdi:bluetooth-connect$$
       tap: "$$mdi:numeric-1-circle$$"
       # tap: "1"
@@ -104,31 +104,37 @@ parse_config:
 
     "&mo L_SYM":
       shifted: "$$mdi:layers$$"
-      tap: "L_SYM"
-      hold: "SYM"
+      # tap: "L-SYM"
+      tap: "SYM"
+      # hold: "SYM"
 
     "&mo L_NUM":
-      tap: "L_NUM"
+      # tap: "L-NUM"
+      tap: "NUM"
       shifted: $$mdi:layers$$
-      hold: "NUM"
+      # hold: "NUM"
 
     "&mo L_ADJ":
-      tap: "L_ADJ"
+      # tap: "L-ADJ"
+      tap: "ADJ"
       # shifted: $$mdi:layers$$
       # hold: "CYR"
 
     "&mo L_CYR":
-      tap: "L_CYR"
+      # tap: "L-CYR"
+      tap: "CYR"
       shifted: $$mdi:layers$$
-      hold: "ADJ"
+      # hold: "ADJ"
 
     "&sl L_CYR":
-      tap: "L_CYR"
+      # tap: "L-CYR"
+      tap: "CYR"
       shifted: $$mdi:layers$$
-      hold: "ADJ"
+      # hold: "ADJ"
 
     "&mo L_SYS":
-      tap: "L_SYS"
+      # tap: "L-SYS"
+      tap: "SYS"
       # shifted: $$mdi:layers$$
       # hold: "SYS"
 
@@ -498,8 +504,8 @@ draw_config:
   line_spacing: 1.0
 
   # Combo box dimensions
-  combo_w: 55
-  combo_h: 55
+  combo_w: 70
+  combo_h: 70
 
   # Padding from edge of cap
   small_pad: 8
@@ -521,5 +527,5 @@ draw_config:
   glyph_shifted_size: 21
 
   mark_alternate_layer_activators: true
-  style_layer_activators: true
+  style_layer_activators: false
   svg_extra_style: |
