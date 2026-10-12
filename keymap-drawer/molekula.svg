@@ -758,11 +758,14 @@ text.layer-activator {
 }
 
 /* color accent for held keys */
-rect.held, rect.combo.held {
-    fill: var(--color--catppuccin--red--rgba-20);
-    stroke: var(--color--material--red--300);
-    stroke-width: 1;
-    /*stroke-dasharray: 2, 2;*/
+rect.held, rect.combo.held, .key.held rect.key {
+    fill: var(--color--catppuccin--red--rgba-30) !important;
+    stroke: var(--color--material--red--400) !important;
+    stroke-width: 1.5px !important;
+}
+.key.held {
+    --color--key--border: var(--color--material--red--400) !important;
+    --color--key--bg: var(--color--catppuccin--red--rgba-30) !important;
 }
 
 /*
@@ -800,67 +803,57 @@ rect.held, rect.combo.held {
  * Overrides
 */
 
-/* Color Indicators: Pinky */
-.keypos-0,
-.keypos-1,
-.keypos-12,
-.keypos-13,
-.keypos-24,
-.keypos-25,
-.keypos-10,
-.keypos-11,
-.keypos-22,
-.keypos-23,
-.keypos-34,
-.keypos-35 {
-  --color--key--border: var(--color--pinky);
-  --color--key--bg: var(--color--pinky-5);
-
-}
-
-/* Color Indicators: Ring */
-.keypos-2,
-.keypos-9,
-.keypos-14,
-.keypos-21,
-.keypos-26,
-.keypos-33 {
-  --color--key--border: var(--color--ring);
-  --color--key--bg: var(--color--ring-5);
-
-}
-
-/* Color Indicators: Middle */
-.keypos-3,
+/* Color Indicators: Pinky (Green) */
 .keypos-8,
-.keypos-15,
+.keypos-9,
 .keypos-20,
-.keypos-27,
-.keypos-32 {
-  --color--key--border: var(--color--middle);
-  --color--key--bg: var(--color--middle-5);
-
-}
-
-/* Color Indicators: Index */
-.keypos-4,
-.keypos-5,
-.keypos-6,
-.keypos-7,
-.keypos-16,
-.keypos-17,
 .keypos-18,
 .keypos-19,
-.keypos-28,
-.keypos-29,
-.keypos-30,
-.keypos-31 {
-  --color--key--border: var(--color--index);
-  --color--key--bg: var(--color--index-5);
-
+.keypos-29 {
+  --color--key--border: var(--color--pinky);
+  --color--key--bg: var(--color--pinky-5);
 }
 
-/* Color Indicators: Thumb (Molekula positions 30-35) */
+/* Color Indicators: Ring (Pink) */
+.keypos-0,
+.keypos-10,
+.keypos-21,
+.keypos-7,
+.keypos-17,
+.keypos-28 {
+  --color--key--border: var(--color--ring);
+  --color--key--bg: var(--color--ring-5);
+}
+
+/* Color Indicators: Middle (Blue) */
+.keypos-1,
+.keypos-11,
+.keypos-22,
+.keypos-6,
+.keypos-16,
+.keypos-27 {
+  --color--key--border: var(--color--middle);
+  --color--key--bg: var(--color--middle-5);
+}
+
+/* Color Indicators: Index (Yellow) */
+.keypos-2,
+.keypos-3,
+.keypos-12,
+.keypos-13,
+.keypos-23,
+.keypos-24,
+.keypos-4,
+.keypos-5,
+.keypos-14,
+.keypos-15,
+.keypos-25,
+.keypos-26 {
+  --color--key--border: var(--color--index);
+  --color--key--bg: var(--color--index-5);
+}
+
+/* Color Indicators: Thumb (Brown) */
 .keypos-30,
 .keypos-31,
 .keypos-32,
@@ -871,96 +864,54 @@ rect.held, rect.combo.held {
   --color--key--bg: var(--color--thumb-5);
 }
 
-/* Home Row: */
-.keypos-13,
-.keypos-14,
+/* Home Row Border Width: */
+.keypos-9,
+.keypos-10,
+.keypos-11,
+.keypos-12,
 .keypos-15,
 .keypos-16,
-.keypos-19,
-.keypos-20,
-.keypos-21,
-.keypos-22 {
-  /*--color--key--bg: var(--color--catppuccin--surface-0);*/
+.keypos-17,
+.keypos-18 {
   --key--border--width: var(--key--border--width--homerow);
 }
 
-/*Home Row */
-.keypos-13,
-.keypos-22 {
-  --color--key--bg: var(--color--pinky-20)
-
+/* Home Row Finger Accents */
+.keypos-9,
+.keypos-18 {
+  --color--key--bg: var(--color--pinky-20);
 }
-.keypos-14,
-.keypos-21 {
+.keypos-10,
+.keypos-17 {
   --color--key--bg: var(--color--ring-20);
 }
-.keypos-15,
-.keypos-20 {
+.keypos-11,
+.keypos-16 {
   --color--key--bg: var(--color--middle-20);
 }
-.keypos-16,
-.keypos-19 {
+.keypos-12,
+.keypos-15 {
   --color--key--bg: var(--color--index-20);
-    /*background: linear-gradient(*/
-    /*  to bottom,*/
-    /*  rgba(231, 130, 132, 0.3),*/
-    /*  rgba(230, 165, 138, 0.4),*/
-    /*  rgba(229, 200, 144, 0.5)*/
-    /*);*/
-    /*height: 100vh; !* Full viewport height for demonstration *!*/
-    /*width: 100%;*/
-
 }
 
-/* F and J (Home Row Rest) */
-.keypos-16 .tap,
-.keypos-19 .tap
-{
-    /*text-decoration: underline;*/
-    /*text-shadow: 0.75px 0.75px 0.75px black; !* Offset the shadow down *!*/
-    /*text-decoration: underline;*/
-    /*stroke: var(--color--catppuccin--text);*/
-    /*stroke: var(--color--catppuccin--crust);*/
-    /*fill: var(--color--material--red--200);*/
-    /*stroke-linejoin: arcs;*/
-    /*font-weight: bolder;*/
-    /*font-size: 38px;*/
-    /*--font--size: 38px;*/
+/* F and J (Home Row Index Rest / Homing Keys) */
+.keypos-12,
+.keypos-15 {
+  --key--border--width: var(--key--border--width--fj);
 }
-.keypos-16,
-.keypos-19 {
-    /*--key--border--width: 1;*/
-    --key--border--width: var(--key--border--width--fj);
-    /*stroke-dashoffset: 3;*/
-    /*stroke-dasharray: 30,1,1,1,1,1,1,1,1,1;*/
-    /*stroke-dasharray: 2,2,2,2;*/
-    /*stroke-width: 0.2;*/
 
-    /*stroke-linejoin: arcs;*/
-    /*stroke-linejoin: bevel;*/
-    /*stroke-linecap: butt;*/
-    /*stroke-linecap: round;*/
-    /*stroke-linecap: square;*/
-    /*--color--key--border: var(--color--index);*/
-    /*--key--border--width: 1.5;*/
-    /*--font--size--key: 28px;*/
-    /*font-weight: bolder;*/
-
-
-    /*--color--key--text--tap: var(--color--catppuccin--maroon);*/
-}
+/* Thumb Rest (Home Position) */
 .keypos-31,
-.keypos-34
-{
+.keypos-34 {
   --color--key--bg: var(--color--thumb-15);
   --key--border--width: var(--key--border--width--homerow);
 }
 
+/* Thumb Outer / Inner */
 .keypos-30,
 .keypos-32,
 .keypos-33,
-.keypos-35
-{
+.keypos-35 {
   --color--key--bg: var(--color--thumb-5);
 }
 
@@ -1303,9 +1254,11 @@ rect.held, rect.combo.held {
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:arrow-right"/>
 </g>
-<g transform="translate(1080, 150)" class="key none keypos-18">
-<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(1080, 150)" class="key keypos-18">
+<rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
+<text x="0" y="0" class="key tap">&#x27;</text>
+<text x="0" y="-30" class="key shifted">&quot;</text>
+<text x="-30" y="0" class="key left">Э</text>
 </g>
 <g transform="translate(1160, 150)" class="key backspace keypos-19">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key backspace"/>

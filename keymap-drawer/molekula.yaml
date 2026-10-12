@@ -117,8 +117,9 @@ layers:
   - $$mdi:arrow-down$$
   - $$mdi:arrow-up$$
   - $$mdi:arrow-right$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
+  - t: ''''
+    s: '"'
+    left: Э
   - t: $$mdi:backspace-reverse-outline$$
     type: backspace
   - t: $$mdi:minus-circle-outline$$
