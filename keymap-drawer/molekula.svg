@@ -1,4 +1,4 @@
-<svg width="1240" height="2933" viewBox="0 0 1240 2933" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1240" height="3073" viewBox="0 0 1240 3073" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:alpha-s-circle">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-alpha-s-circle" viewBox="0 0 24 24"><path d="M11,7A2,2 0 0,0 9,9V11A2,2 0 0,0 11,13H13V15H9V17H13A2,2 0 0,0 15,15V13A2,2 0 0,0 13,11H11V9H15V7H11M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>
@@ -149,6 +149,9 @@
 </svg>
 <svg id="mdi:skip-previous">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
+</svg>
+<svg id="mdi:thermometer">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-thermometer" viewBox="0 0 24 24"><path d="M15 13V5A3 3 0 0 0 9 5V13A5 5 0 1 0 15 13M12 4A1 1 0 0 1 13 5V8H11V5A1 1 0 0 1 12 4Z" /></svg>
 </svg>
 <svg id="mdi:toggle-switch">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch" viewBox="0 0 24 24"><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></svg>
@@ -586,12 +589,12 @@ svg.keymap {
     --color--key--text--right: var(--color--catppuccin--peach);
     --color--key--text--held: var(--color--catppuccin--text);
 
-    --color--combo--bg: var(--color--catppuccin--blue--rgba-85);
-    --color--combo--border: var(--color--catppuccin--blue);
-    --color--combo--dendron: var(--color--catppuccin--blue--rgba-50);
-    --color--combo--text--tap: var(--color--catppuccin--base);
-    --color--combo--text--shifted: var(--color--catppuccin--base);
-    --color--combo--text--hold: var(--color--catppuccin--base);
+    --color--combo--bg: #584179;
+    --color--combo--border: var(--color--catppuccin--mauve);
+    --color--combo--dendron: #ff9f43;
+    --color--combo--text--tap: var(--color--catppuccin--text);
+    --color--combo--text--shifted: var(--color--catppuccin--text);
+    --color--combo--text--hold: var(--color--catppuccin--text);
 
     --color--trans--bg: transparent;
     --color--trans--border: var(--color--catppuccin--overlay-2);
@@ -705,6 +708,13 @@ text.label {
     translate: 600px 0px;
 }
 
+/* Layer separators */
+.layer-separator {
+    stroke: var(--color--catppuccin--surface-1);
+    stroke-width: var(--key--border--width);
+    stroke-linecap: round;
+}
+
 
 
 /* Keys */
@@ -781,14 +791,14 @@ rect.combo {
     --color--key--text--tap: var(--color--combo--text--tap);
     --color--key--text--shifted: var(--color--combo--text--shifted);
     --color--key--text--hold: var(--color--combo--text--hold);
-    --key--border--width: 1;
+    --key--border--width: 1.5;
 }
 rect.combo {
     --color--key--border: var(--color--combo--border);
-    /*stroke-width: 0;*/
+    stroke-width: var(--key--border--width);
 }
 path.combo {
-    stroke-width: var(--key--border--width);
+    stroke-width: 0.4;
     stroke: var(--color--combo--dendron);
     fill: none;
 }
@@ -1044,8 +1054,8 @@ rect.held, rect.combo.held, .key.held rect.key {
 }
 </style>
 <g transform="translate(20, 0)" class="layer-L0 - BASE">
-<text x="0" y="35" class="label" id="L0---BASE">L0 - BASE</text>
-<g transform="translate(0, 98)">
+<text x="0" y="45" class="label" id="L0---BASE">L0 - BASE</text>
+<g transform="translate(0, 118)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <text x="0" y="0" class="key tap">W</text>
@@ -1270,9 +1280,10 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 472)" class="layer-L1 - SYM">
-<text x="0" y="35" class="label" id="L1---SYM">L1 - SYM</text>
-<g transform="translate(0, 70)">
+<g transform="translate(20, 492)" class="layer-L1 - SYM">
+<line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
+<text x="0" y="45" class="label" id="L1---SYM">L1 - SYM</text>
+<g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key none keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>
@@ -1423,9 +1434,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
 <rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
-<use href="#mdi:desk-lamp" xlink:href="#mdi:desk-lamp" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:desk-lamp"/>
-<text x="0" y="38" class="key hold">F15</text>
-<text x="0" y="-38" class="key shifted">F14</text>
+<use href="#mdi:thermometer" xlink:href="#mdi:thermometer" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:thermometer"/>
+<text x="0" y="38" class="key hold">F17</text>
+<text x="0" y="-38" class="key shifted">F16</text>
 </g>
 <g transform="translate(656, 140)" class="key keypos-37">
 <rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
@@ -1435,9 +1446,10 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 915)" class="layer-L2 - NUM">
-<text x="0" y="35" class="label" id="L2---NUM">L2 - NUM</text>
-<g transform="translate(0, 70)">
+<g transform="translate(20, 955)" class="layer-L2 - NUM">
+<line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
+<text x="0" y="45" class="label" id="L2---NUM">L2 - NUM</text>
+<g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <text x="0" y="0" class="key tap">=</text>
@@ -1587,9 +1599,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
 <rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
-<use href="#mdi:desk-lamp" xlink:href="#mdi:desk-lamp" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:desk-lamp"/>
-<text x="0" y="38" class="key hold">F15</text>
-<text x="0" y="-38" class="key shifted">F14</text>
+<use href="#mdi:thermometer" xlink:href="#mdi:thermometer" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:thermometer"/>
+<text x="0" y="38" class="key hold">F17</text>
+<text x="0" y="-38" class="key shifted">F16</text>
 </g>
 <g transform="translate(656, 140)" class="key keypos-37">
 <rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
@@ -1599,9 +1611,10 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 1358)" class="layer-L3 - ADJ">
-<text x="0" y="35" class="label" id="L3---ADJ">L3 - ADJ</text>
-<g transform="translate(0, 70)">
+<g transform="translate(20, 1418)" class="layer-L3 - ADJ">
+<line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
+<text x="0" y="45" class="label" id="L3---ADJ">L3 - ADJ</text>
+<g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:skip-previous"/>
@@ -1770,9 +1783,10 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 1889)" class="layer-L4 - CYR">
-<text x="0" y="35" class="label" id="L4---CYR">L4 - CYR</text>
-<g transform="translate(0, 70)">
+<g transform="translate(20, 1969)" class="layer-L4 - CYR">
+<line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
+<text x="0" y="45" class="label" id="L4---CYR">L4 - CYR</text>
+<g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <text x="0" y="0" class="key tap">Ї</text>
@@ -1933,9 +1947,10 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 2332)" class="layer-L5 - SYS">
-<text x="0" y="35" class="label" id="L5---SYS">L5 - SYS</text>
-<g transform="translate(0, 70)">
+<g transform="translate(20, 2432)" class="layer-L5 - SYS">
+<line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
+<text x="0" y="45" class="label" id="L5---SYS">L5 - SYS</text>
+<g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key none keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-12" y="-12" height="25" width="25.0" class="key none tap glyph mdi:minus-circle-outline"/>

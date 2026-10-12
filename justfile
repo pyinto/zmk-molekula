@@ -183,6 +183,7 @@ kd_layout_json   := kd_dir / "molekula.json"
 kd_yaml          := kd_dir / "molekula.yaml"
 kd_svg           := kd_dir / "molekula.svg"
 kd_inject        := kd_dir / "inject_encoders.py"
+kd_inject_sep    := kd_dir / "inject_separators.py"
 
 # Prepare merged config with embedded CSS styles
 draw-config:
@@ -201,6 +202,7 @@ parse-keymap: draw-config
 draw: parse-keymap
     uv run --with pyyaml python3 "{{kd_inject}}" "{{kd_yaml}}"
     uvx --from keymap-drawer keymap -c "{{kd_merged_config}}" draw -j "{{kd_layout_json}}" "{{kd_yaml}}" "{{kd_combos}}" -o "{{kd_svg}}"
+    python3 "{{kd_inject_sep}}" "{{kd_svg}}"
     rm -f "{{kd_merged_config}}"
     @echo "Generated {{kd_svg}}"
 

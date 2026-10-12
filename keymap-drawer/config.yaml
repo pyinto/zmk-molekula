@@ -510,7 +510,7 @@ draw_config:
   inner_pad_h: 2
 
   outer_pad_w: 20
-  outer_pad_h: 70
+  outer_pad_h: 90
 
   append_colon_to_layer_header: false
   shrink_wide_legends: 5

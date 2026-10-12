@@ -153,9 +153,9 @@ layers:
     type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - s: F14
-    t: $$mdi:desk-lamp$$
-    h: F15
+  - s: F16
+    t: $$mdi:thermometer$$
+    h: F17
   - s: F15
     t: $$mdi:desk-lamp$$
     h: F14
@@ -212,9 +212,9 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - s: F14
-    t: $$mdi:desk-lamp$$
-    h: F15
+  - s: F16
+    t: $$mdi:thermometer$$
+    h: F17
   - s: F15
     t: $$mdi:desk-lamp$$
     h: F14

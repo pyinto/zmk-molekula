@@ -287,12 +287,12 @@ svg.keymap {
     --color--key--text--right: var(--color--catppuccin--peach);
     --color--key--text--held: var(--color--catppuccin--text);
 
-    --color--combo--bg: var(--color--catppuccin--blue--rgba-85);
-    --color--combo--border: var(--color--catppuccin--blue);
-    --color--combo--dendron: var(--color--catppuccin--blue--rgba-50);
-    --color--combo--text--tap: var(--color--catppuccin--base);
-    --color--combo--text--shifted: var(--color--catppuccin--base);
-    --color--combo--text--hold: var(--color--catppuccin--base);
+    --color--combo--bg: #584179;
+    --color--combo--border: var(--color--catppuccin--mauve);
+    --color--combo--dendron: #ff9f43;
+    --color--combo--text--tap: var(--color--catppuccin--text);
+    --color--combo--text--shifted: var(--color--catppuccin--text);
+    --color--combo--text--hold: var(--color--catppuccin--text);
 
     --color--trans--bg: transparent;
     --color--trans--border: var(--color--catppuccin--overlay-2);
@@ -406,6 +406,13 @@ text.label {
     translate: 600px 0px;
 }
 
+/* Layer separators */
+.layer-separator {
+    stroke: var(--color--catppuccin--surface-1);
+    stroke-width: var(--key--border--width);
+    stroke-linecap: round;
+}
+
 
 
 /* Keys */
@@ -482,14 +489,14 @@ rect.combo {
     --color--key--text--tap: var(--color--combo--text--tap);
     --color--key--text--shifted: var(--color--combo--text--shifted);
     --color--key--text--hold: var(--color--combo--text--hold);
-    --key--border--width: 1;
+    --key--border--width: 1.5;
 }
 rect.combo {
     --color--key--border: var(--color--combo--border);
-    /*stroke-width: 0;*/
+    stroke-width: var(--key--border--width);
 }
 path.combo {
-    stroke-width: var(--key--border--width);
+    stroke-width: 0.4;
     stroke: var(--color--combo--dendron);
     fill: none;
 }
