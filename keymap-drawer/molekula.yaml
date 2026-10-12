@@ -80,12 +80,17 @@ layers:
   - t: /
     s: \
   - $$mdi:keyboard-tab$$
-  - L2
+  - t: L2
+    h: NUM
+    s: $$mdi:layers$$
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
-  - L1
+  - t: L1
+    h: SYM
+    s: $$mdi:layers$$
   - t: L4
     h: $$mdi:gesture-tap-hold$$
+    s: $$mdi:layers$$
   - t: $$mdi:brightness-6$$
     s: +
     h: '-'
@@ -100,12 +105,10 @@ layers:
   - '@'
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: '['
-    s: '{'
+  - '['
   - '{'
   - '}'
-  - t: ']'
-    s: '}'
+  - ']'
   - '~'
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -126,14 +129,15 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - /
+  - t: $$mdi:minus-circle-outline$$
+    type: none
   - '#'
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - '='
+  - <
   - (
   - )
-  - '*'
+  - '>'
   - '&'
   - t: $$mdi:layers-triple-outline$$
     type: trans
@@ -143,7 +147,8 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: F14
@@ -151,21 +156,16 @@ layers:
   - t: F15
     s: F14
   L2 - NUM:
-  - t: '='
-    s: +
-  - t: '-'
-    s: _
-  - PLUS
+  - '='
+  - '-'
+  - +
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: '7'
-    s: '&'
-  - t: '8'
-    s: '*'
-  - t: '9'
-    s: (
+  - '7'
+  - '8'
+  - '9'
   - _
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -175,34 +175,29 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: '4'
-    s: $
-  - t: '5'
-    s: '%'
-  - t: '6'
-    s: ^
-  - t: '0'
-    s: )
+  - '4'
+  - '5'
+  - '6'
+  - '0'
   - t: $$mdi:backspace-reverse-outline$$
     type: backspace
   - ^
   - '%'
-  - $
+  - t: $
+    s: €
   - '*'
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: '1'
-    s: '!'
-  - t: '2'
-    s: '@'
-  - t: '3'
-    s: '#'
+  - '1'
+  - '2'
+  - '3'
   - '|'
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
@@ -265,12 +260,14 @@ layers:
     type: none
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - type: held
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:brightness-6$$
@@ -285,9 +282,9 @@ layers:
   - $$mdi:skip-next$$
   - $$mdi:volume-variant-off$$
   - F13
-  - F7
-  - F8
-  - F9
+  - $$mdi:keyboard-f7$$
+  - $$mdi:keyboard-f8$$
+  - $$mdi:keyboard-f9$$
   - t: $$mdi:minus-circle-outline$$
     type: none
   - $$mdi:apple-keyboard-control$$
@@ -296,11 +293,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - F12
-  - F4
-  - F5
-  - F6
-  - F10
+  - $$mdi:keyboard-f12$$
+  - $$mdi:keyboard-f4$$
+  - $$mdi:keyboard-f5$$
+  - $$mdi:keyboard-f6$$
+  - $$mdi:keyboard-f10$$
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
@@ -313,10 +310,10 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - F11
-  - F1
-  - F2
-  - F3
+  - $$mdi:keyboard-f11$$
+  - $$mdi:keyboard-f1$$
+  - $$mdi:keyboard-f2$$
+  - $$mdi:keyboard-f3$$
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:layers-triple-outline$$
@@ -329,7 +326,8 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
   - t: $$mdi:brightness-6$$
     s: +
     h: '-'
@@ -345,18 +343,21 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - t: BLE
+  - t: $$mdi:toggle-switch$$
     s: $$mdi:bluetooth$$
-  - t: USB
+  - t: $$mdi:toggle-switch$$
     s: $$mdi:usb$$
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - $$mdi:lock-open-outline$$
+  - t: $$mdi:lock-open$$
+    s: $$mdi:alpha-s-circle$$
   - t: $$mdi:backup-restore$$
+    s: $$mdi:alpha-z-circle$$
     type: bootloader
   - t: $$mdi:progress-download$$
+    s: $$mdi:alpha-z-circle$$
     type: bootloader
-  - t: Clear
+  - t: $$mdi:lan-disconnect$$
     s: $$mdi:bluetooth-off$$
   - t: $$mdi:minus-circle-outline$$
     type: none
@@ -364,7 +365,8 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - EP TOG
+  - t: $$mdi:ev-station$$
+    s: $$mdi:power-plug$$
   - t: $$mdi:minus-circle-outline$$
     type: none
   - t: $$mdi:minus-circle-outline$$
@@ -385,26 +387,28 @@ layers:
     type: none
   - t: $$mdi:minus-circle-outline$$
     type: none
-  - h: '1'
+  - t: $$mdi:numeric-1-circle$$
     s: $$mdi:bluetooth-connect$$
-  - h: '2'
+  - t: $$mdi:numeric-2-circle$$
     s: $$mdi:bluetooth-connect$$
-  - h: '3'
+  - t: $$mdi:numeric-3-circle$$
     s: $$mdi:bluetooth-connect$$
-  - h: '4'
+  - t: $$mdi:numeric-4-circle$$
     s: $$mdi:bluetooth-connect$$
-  - h: '5'
+  - t: $$mdi:numeric-5-circle$$
     s: $$mdi:bluetooth-connect$$
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - type: held
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
   - t: $$mdi:brightness-6$$
     s: +
     h: '-'
@@ -432,7 +436,10 @@ combos:
 - p:
   - 31
   - 35
-  k: L5
+  k:
+    t: L5
+    h: SYS
+    s: $$mdi:layers$$
   l:
   - L5 - SYS
   a: bottom

@@ -1,87 +1,202 @@
 parse_config:
+
+# ------------------------------| Config |------------------------------
+
   mark_alternate_layer_activators: true
+
   sticky_label: $$mdi:gesture-tap-hold$$
+
   trans_legend:
     tap: $$mdi:layers-triple-outline$$
     type: trans
 
+# ---------------------------| Icon-Mapping |---------------------------
+
   raw_binding_map:
-    # System & bootloader
-    "&sys_reset":
-      type: bootloader
-      tap: $$mdi:backup-restore$$
-    "&bootloader":
-      type: bootloader
-      tap: $$mdi:progress-download$$
-    "&studio_unlock":
-      tap: $$mdi:lock-open-outline$$
-    "&caps_word": $$mdi:alpha-w-box$$
 
-    # Power & Bluetooth
-    "&out OUT_USB":
-      shifted: $$mdi:usb$$
-      tap: USB
-    "&out OUT_BLE":
-      shifted: $$mdi:bluetooth$$
-      tap: BLE
-    "&ext_power EP_OFF":
-      tap: EP OFF
-    "&ext_power EP_ON":
-      tap: EP ON
+    # |--- --- --- --<  Placeholders  >-- --- --- ---|
 
-    "&bt BT_SEL 0":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 1
-    "&bt BT_SEL 1":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 2
-    "&bt BT_SEL 2":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 3
-    "&bt BT_SEL 3":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 4
-    "&bt BT_SEL 4":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 5
-    "&bt BT_CLR":
-      shifted: $$mdi:bluetooth-off$$
-      tap: Clear
-
-    # Empty
     "&none":
       tap: $$mdi:minus-circle-outline$$
       type: none
 
-  layer_legend_map:
-    "L0 - BASE": L0
-    "L1 - SYM": L1
-    "L2 - NUM": L2
-    "L3 - CYR": L3
-    "L4 - ADJ": L4
-    "L5 - SYS": L5
+    # |--- --- --- --< ZMK, Power, BT >-- --- --- ---|
 
-  zmk_combos:
-    combo_ui_esc:
-      align: top
-      layers: ["L0 - BASE"]
-    combo_fj_caps:
-      align: top
-      layers: ["L0 - BASE"]
-    combo_lp_quote:
-      align: top
-      layers: ["L0 - BASE"]
-    combo_num_cyr_sys:
-      align: bottom
-      layers: ["L5 - SYS"]
+    "&sys_reset":
+      type: bootloader
+      shifted: "$$mdi:alpha-z-circle$$"
+      tap: $$mdi:backup-restore$$
+
+    "&bootloader":
+      type: bootloader
+      shifted: "$$mdi:alpha-z-circle$$"
+      tap: $$mdi:progress-download$$
+
+    "&studio_unlock":
+      # shifted: "$$mdi:alpha-z-circle$$"
+      # tap: "$$mdi:alpha-s-box$$"
+      shifted: "$$mdi:alpha-s-circle$$"
+      tap: $$mdi:lock-open$$
+
+    "&ext_power EP_OFF":  # Disable the external power.
+      shifted: "$$mdi:power-plug$$"
+      tap: "$$mdi:toggle-switch-off$$"
+
+    "&ext_power EP_ON":   # Enable the external power.
+      shifted: "$$mdi:power-plug$$"
+      tap: "$$mdi:toggle-switch$$"
+
+    "&ext_power EP_TOG":  # Toggle the external power.
+      shifted: "$$mdi:power-plug$$"
+      tap: "$$mdi:ev-station$$"
+      # tap: "$$mdi:toggle-switch-variant$$"
+
+    "&out OUT_USB":
+      shifted: $$mdi:usb$$
+      tap: "$$mdi:toggle-switch$$"
+      # tap: USB
+      # tap: "$$mdi:$$"  # TODO: add icon
+
+    "&out OUT_BLE":
+      shifted: $$mdi:bluetooth$$
+      tap: "$$mdi:toggle-switch$$"
+      # tap: BLE  # TODO: add icon
+
+    "&bt BT_CLR":
+      shifted: $$mdi:bluetooth-off$$
+      # tap: Clear  # TODO: add icon
+      tap: "$$mdi:lan-disconnect$$"
+
+    "&bt BT_SEL 0":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "$$mdi:numeric-1-circle$$"
+      # tap: "1"
+      # hold: 1
+
+    "&bt BT_SEL 1":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "$$mdi:numeric-2-circle$$"
+      # tap: "2"
+      # hold: 2
+
+    "&bt BT_SEL 2":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "$$mdi:numeric-3-circle$$"
+      # tap: "3"
+      # hold: 3
+
+    "&bt BT_SEL 3":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "$$mdi:numeric-4-circle$$"
+      # tap: "4"
+      # hold: 4
+
+    "&bt BT_SEL 4":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "$$mdi:numeric-5-circle$$"
+      # tap: "5"
+      # hold: 5
+
+    "&caps_word":  # TODO: what is it?
+      tap: $$mdi:alpha-w-box$$
+
+    # |--- --- --- --<   My-Layers   >-- --- --- ---|
+
+    "&mo L1":
+      shifted: "$$mdi:layers$$"
+      tap: "L1"
+      hold: "SYM"
+
+    "&mo L2":
+      shifted: $$mdi:layers$$
+      tap: "L2"
+      hold: "NUM"
+
+    "&mo L3":
+      shifted: $$mdi:layers$$
+      tap: "L3"
+      hold: "CYR"
+
+    "&mo L4":
+      shifted: $$mdi:layers$$
+      tap: "L4"
+      hold: "ADJ"
+
+    "&mo L5":
+      shifted: $$mdi:layers$$
+      tap: "L5"
+      hold: "SYS"
+
+# TODO: doesn't work...
+#     layer_legend_map:
+#       "L0 - BASE":
+#         tap: L0
+#
+#       "L1 - SYM":
+#         tap: "L1"
+#
+#       "L2 - NUM":
+#         tap: "L2"
+#
+#       "L3 - CYR":
+#         tap: "L3"
+#
+#       "L4 - ADJ":
+#         tap: "L4"
+#
+#       "L5 - SYS":
+#         tap: "L5"
+
 
   zmk_keycode_map:
-    # Modifiers
+
+    F1:
+      tap: "$$mdi:keyboard-f1$$"
+
+    F2:
+      tap: "$$mdi:keyboard-f2$$"
+
+    F3:
+      tap: "$$mdi:keyboard-f3$$"
+
+    F4:
+      tap: "$$mdi:keyboard-f4$$"
+
+    F5:
+      tap: "$$mdi:keyboard-f5$$"
+
+    F6:
+      tap: "$$mdi:keyboard-f6$$"
+
+    F7:
+      tap: "$$mdi:keyboard-f7$$"
+
+    F8:
+      tap: "$$mdi:keyboard-f8$$"
+
+    F9:
+      tap: "$$mdi:keyboard-f9$$"
+
+    F10:
+      tap: "$$mdi:keyboard-f10$$"
+
+    F11:
+      tap: "$$mdi:keyboard-f11$$"
+
+    F12:
+      tap: "$$mdi:keyboard-f12$$"
+#
+#     F13:
+#       tap: "$$mdi:keyboard-f13$$"
+#
+#     F14:
+#       tap: "$$mdi:keyboard-f14$$"
+#
+#     F15:
+#       tap: "$$mdi:keyboard-f15$$"
+
+    # |--- --- --- --< Mods >-- --- --- ---|
+
     LCTRL: $$mdi:apple-keyboard-control$$
     RCTRL: $$mdi:apple-keyboard-control$$
     LALT: $$mdi:apple-keyboard-option$$
@@ -92,12 +207,15 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
 
     # Whitespace & Navigation
+
     BSPC:
       tap: $$mdi:backspace$$
       type: backspace
+
     DEL:
       tap: $$mdi:backspace-reverse-outline$$
       type: backspace
+
     TAB: $$mdi:keyboard-tab$$
     ENTER: $$mdi:keyboard-return$$
     SPACE: $$mdi:keyboard-space$$
@@ -109,7 +227,8 @@ parse_config:
     UP: $$mdi:arrow-up$$
     RIGHT: $$mdi:arrow-right$$
 
-    # Media & Brightness
+    # |--- --- --- --< Media & Brightness >-- --- --- ---|
+
     C_BRI_DN: $$mdi:brightness-4$$
     C_BRI_UP: $$mdi:brightness-7$$
     C_VOL_DN: $$mdi:volume-minus$$
@@ -119,90 +238,138 @@ parse_config:
     C_NEXT: $$mdi:skip-next$$
     C_PP: $$mdi:play-pause$$
 
-    # Numbers
+    # |--- --- --- --< Numbers >-- --- --- ---|
+
     N1:
       tap: 1
-      shifted: "!"
+      # shifted: "!"
     N2:
       tap: 2
-      shifted: "@"
+      # shifted: "@"
     N3:
       tap: 3
-      shifted: "#"
+      # shifted: "#"
     N4:
       tap: 4
-      shifted: "$"
+      # shifted: "$"
     N5:
       tap: 5
-      shifted: "%"
+      # shifted: "%"
     N6:
       tap: 6
-      shifted: "^"
+      # shifted: "^"
     N7:
       tap: 7
-      shifted: "&"
+      # shifted: "&"
     N8:
       tap: 8
-      shifted: "*"
+      # shifted: "*"
     N9:
       tap: 9
-      shifted: "("
+      # shifted: "("
     N0:
       tap: 0
-      shifted: ")"
+      # shifted: ")"
 
-    # Punctuation & Symbols
+    # |--- --- --- --< Punctuation & Symbols >-- --- --- ---|
+
+    LBKT:
+      tap: "["
+      # shifted: "{"
+
+    RBKT:
+      tap: "]"
+      # shifted: "}"
+
+    LBRC:
+      tap: "{"
+
+    RBRC:
+      tap: "}"
+
+    LPAR:
+      tap: "("
+
+    RPAR:
+      tap: ")"
+
+    LT:
+      tap: "<"
+
+    GT:
+      tap: ">"
+
     COMMA:
       tap: ","
       shifted: "?"
       left: "Б"
+
     DOT:
       tap: "."
       shifted: "!"
       left: "Ю"
+
     FSLH:
       tap: "/"
       shifted: "\\"
+
     SEMI:
       tap: ";"
       shifted: ":"
       left: "Ж"
+
     SQT:
       tap: "'"
       shifted: '"'
       left: "Э"
+
     MINUS:
       tap: "-"
-      shifted: "_"
+      # shifted: "_"
+
     EQUAL:
       tap: "="
-      shifted: "+"
-    LBKT:
-      tap: "["
-      shifted: "{"
-    RBKT:
-      tap: "]"
-      shifted: "}"
-    LBRC: "{"
-    RBRC: "}"
-    LPAR: "("
-    RPAR: ")"
+      # shifted: "+"
+
     AT: "@"
     HASH: "#"
     AMPS: "&"
     PIPE: "|"
     CARET: "^"
     PERCENT: "%"
-    DOLLAR: "$"
     ASTERISK: "*"
     TILDE: "~"
     UNDER: "_"
+    PLUS: "+"
     KP_SLASH: "/"
     KP_EQUAL: "="
     KP_MULTIPLY: "*"
     KP_DOT: "."
 
-    # Alpha keys with bilingual Cyrillic sub-legends
+    DOLLAR:
+      tap: "$"
+      shifted: "€"
+
+    USD: "$"
+    EUR: "€"
+    GBP: "£"
+
+    # |--- --- --- --< Cyrillic layer translations >-- --- --- ---|
+
+    KP_PLUS: "Ї"
+    KP_MINUS: "Ґ"
+    KP_N1: "Ю"
+    KP_N2: "Ë"
+    KP_N3: "Ъ"
+    KP_N4: "Ж"
+    KP_N5: "Х"
+    KP_N6: "Э"
+    KP_N7: "Б"
+    KP_N8: "I"
+    KP_N9: "Є"
+
+    # |--- --- --- --< Alpha & Cyrillic >-- --- --- ---|
+
     Q:
       tap: "Q"
       left: "Ї"
@@ -289,18 +456,28 @@ parse_config:
       left: "Ъ"
       right: "Ь"
 
-    # Cyrillic layer translations
-    KP_PLUS: "Ї"
-    KP_MINUS: "Ґ"
-    KP_N1: "Ю"
-    KP_N2: "Ë"
-    KP_N3: "Ъ"
-    KP_N4: "Ж"
-    KP_N5: "Х"
-    KP_N6: "Э"
-    KP_N7: "Б"
-    KP_N8: "I"
-    KP_N9: "Є"
+  # |--- --- --- --< My-Combos >-- --- --- ---|
+
+  zmk_combos:
+
+    combo_ui_esc:
+      align: top
+      layers: ["L0 - BASE"]
+
+    combo_fj_caps:
+      align: top
+      layers: ["L0 - BASE"]
+
+    combo_lp_quote:
+      align: top
+      layers: ["L0 - BASE"]
+
+    combo_num_cyr_sys:
+      align: bottom
+      layers: ["L5 - SYS"]
+
+
+# ---------------------------| Draw-Config |----------------------------
 
 draw_config:
   dark_mode: true
