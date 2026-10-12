@@ -102,55 +102,55 @@ parse_config:
 
     # |--- --- --- --<   My-Layers   >-- --- --- ---|
 
-    "&mo L1":
+    "&mo L_SYM":
       shifted: "$$mdi:layers$$"
-      tap: "L1"
+      tap: "L_SYM"
       hold: "SYM"
 
-    "&mo L2":
-      tap: "L2"
+    "&mo L_NUM":
+      tap: "L_NUM"
       shifted: $$mdi:layers$$
       hold: "NUM"
 
-    "&mo L3":
-      tap: L3
+    "&mo L_ADJ":
+      tap: "L_ADJ"
       # shifted: $$mdi:layers$$
       # hold: "CYR"
 
-    "&mo L4":
-      tap: "L4"
+    "&mo L_CYR":
+      tap: "L_CYR"
       shifted: $$mdi:layers$$
       hold: "ADJ"
 
-    "&sl L4":
-      tap: "L4"
+    "&sl L_CYR":
+      tap: "L_CYR"
       shifted: $$mdi:layers$$
       hold: "ADJ"
 
-    "&mo L5":
-      tap: L5
+    "&mo L_SYS":
+      tap: "L_SYS"
       # shifted: $$mdi:layers$$
       # hold: "SYS"
 
 # TODO: doesn't work...
 #     layer_legend_map:
-#       "L0 - BASE":
-#         tap: L0
+#       "L_BASE":
+#         tap: "L_BASE"
 #
-#       "L1 - SYM":
-#         tap: "L1"
+#       "L_SYM":
+#         tap: "L_SYM"
 #
-#       "L2 - NUM":
-#         tap: "L2"
+#       "L_NUM":
+#         tap: "L_NUM"
 #
-#       "L3 - CYR":
-#         tap: "L3"
+#       "L_ADJ":
+#         tap: "L_ADJ"
 #
-#       "L4 - ADJ":
-#         tap: "L4"
+#       "L_CYR":
+#         tap: "L_CYR"
 #
-#       "L5 - SYS":
-#         tap: "L5"
+#       "L_SYS":
+#         tap: "L_SYS"
 
 
   zmk_keycode_map:
@@ -467,15 +467,15 @@ parse_config:
 
     combo_ui_esc:
       align: top
-      layers: ["L0 - BASE"]
+      layers: ["L_BASE"]
 
     combo_fj_caps:
       align: top
-      layers: ["L0 - BASE"]
+      layers: ["L_BASE"]
 
     combo_lp_quote:
       align: top
-      layers: ["L0 - BASE"]
+      layers: ["L_BASE"]
 
     combo_num_cyr_sys:
       hidden: true

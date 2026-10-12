@@ -1059,8 +1059,8 @@ rect.held, rect.combo.held, .key.held rect.key {
   translate: 5px 0px;
 }
 </style>
-<g transform="translate(20, 0)" class="layer-L0 - BASE">
-<text x="0" y="45" class="label" id="L0---BASE">L0 - BASE</text>
+<g transform="translate(20, 0)" class="layer-L_BASE">
+<text x="0" y="45" class="label" id="L_BASE">L_BASE</text>
 <g transform="translate(0, 118)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1234,8 +1234,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(445, 312) rotate(6.0)" class="key keypos-31">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<text x="0" y="0" class="key tap">L2</text>
-<text x="0" y="30" class="key hold">NUM</text>
+<a href="#L_NUM">
+<text x="0" y="0" class="key tap layer-activator">L_NUM</text>
+</a><text x="0" y="30" class="key hold">NUM</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(529, 326) rotate(12.0)" class="key keypos-32">
@@ -1248,14 +1249,16 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(755, 312) rotate(-6.0)" class="key keypos-34">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<text x="0" y="0" class="key tap">L1</text>
-<text x="0" y="30" class="key hold">SYM</text>
+<a href="#L_SYM">
+<text x="0" y="0" class="key tap layer-activator">L_SYM</text>
+</a><text x="0" y="30" class="key hold">SYM</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(840, 308)" class="key keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
-<text x="0" y="0" class="key tap">L4</text>
-<text x="0" y="30" class="key hold">ADJ</text>
+<a href="#L_CYR">
+<text x="0" y="0" class="key tap layer-activator">L_CYR</text>
+</a><text x="0" y="30" class="key hold">ADJ</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
@@ -1286,9 +1289,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 492)" class="layer-L1 - SYM">
+<g transform="translate(20, 492)" class="layer-L_SYM">
 <line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
-<text x="0" y="45" class="label" id="L1---SYM">L1 - SYM</text>
+<text x="0" y="45" class="label" id="L_SYM">L_SYM</text>
 <g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key none keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
@@ -1430,8 +1433,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(755, 312) rotate(-6.0)" class="key held keypos-34">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
-<text x="0" y="0" class="key held tap">L1</text>
-<text x="0" y="30" class="key held hold">SYM</text>
+<a href="#L_SYM">
+<text x="0" y="0" class="key held tap layer-activator">L_SYM</text>
+</a><text x="0" y="30" class="key held hold">SYM</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(840, 308)" class="key trans keypos-35">
@@ -1452,9 +1456,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 955)" class="layer-L2 - NUM">
+<g transform="translate(20, 955)" class="layer-L_NUM">
 <line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
-<text x="0" y="45" class="label" id="L2---NUM">L2 - NUM</text>
+<text x="0" y="45" class="label" id="L_NUM">L_NUM</text>
 <g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1583,8 +1587,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(445, 312) rotate(6.0)" class="key held keypos-31">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
-<text x="0" y="0" class="key held tap">L2</text>
-<text x="0" y="30" class="key held hold">NUM</text>
+<a href="#L_NUM">
+<text x="0" y="0" class="key held tap layer-activator">L_NUM</text>
+</a><text x="0" y="30" class="key held hold">NUM</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(529, 326) rotate(12.0)" class="key trans keypos-32">
@@ -1617,9 +1622,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 1418)" class="layer-L3 - ADJ">
+<g transform="translate(20, 1418)" class="layer-L_ADJ">
 <line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
-<text x="0" y="45" class="label" id="L3---ADJ">L3 - ADJ</text>
+<text x="0" y="45" class="label" id="L_ADJ">L_ADJ</text>
 <g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1747,8 +1752,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(445, 312) rotate(6.0)" class="key held keypos-31">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
-<text x="0" y="0" class="key held tap">L2</text>
-<text x="0" y="30" class="key held hold">NUM</text>
+<a href="#L_NUM">
+<text x="0" y="0" class="key held tap layer-activator">L_NUM</text>
+</a><text x="0" y="30" class="key held hold">NUM</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(529, 326) rotate(12.0)" class="key trans keypos-32">
@@ -1761,8 +1767,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(755, 312) rotate(-6.0)" class="key held keypos-34">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
-<text x="0" y="0" class="key held tap">L1</text>
-<text x="0" y="30" class="key held hold">SYM</text>
+<a href="#L_SYM">
+<text x="0" y="0" class="key held tap layer-activator">L_SYM</text>
+</a><text x="0" y="30" class="key held hold">SYM</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(840, 308)" class="key trans keypos-35">
@@ -1785,13 +1792,14 @@ rect.held, rect.combo.held, .key.held rect.key {
 <path d="M600,433 h-149 a6.0,6.0 0 0 1 -6.0,-6.0 v-88" class="combo"/>
 <path d="M600,433 h149 a6.0,6.0 0 0 0 6.0,-6.0 v-88" class="combo"/>
 <rect rx="7" ry="7" x="572" y="406" width="55" height="55" class="combo"/>
-<text x="600" y="433" class="combo tap">L3</text>
+<a href="#L_ADJ">
+<text x="600" y="433" class="combo tap layer-activator">L_ADJ</text>
+</a></g>
 </g>
 </g>
-</g>
-<g transform="translate(20, 1969)" class="layer-L4 - CYR">
+<g transform="translate(20, 1969)" class="layer-L_CYR">
 <line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
-<text x="0" y="45" class="label" id="L4---CYR">L4 - CYR</text>
+<text x="0" y="45" class="label" id="L_CYR">L_CYR</text>
 <g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
@@ -1935,8 +1943,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(840, 308)" class="key held keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
-<text x="0" y="0" class="key held tap">L4</text>
-<text x="0" y="30" class="key held hold">ADJ</text>
+<a href="#L_CYR">
+<text x="0" y="0" class="key held tap layer-activator">L_CYR</text>
+</a><text x="0" y="30" class="key held hold">ADJ</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
@@ -1953,9 +1962,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 </g>
 </g>
-<g transform="translate(20, 2432)" class="layer-L5 - SYS">
+<g transform="translate(20, 2432)" class="layer-L_SYS">
 <line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>
-<text x="0" y="45" class="label" id="L5---SYS">L5 - SYS</text>
+<text x="0" y="45" class="label" id="L_SYS">L_SYS</text>
 <g transform="translate(0, 90)">
 <g transform="translate(200, 50)" class="key none keypos-0">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key none"/>
@@ -2095,8 +2104,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(445, 312) rotate(6.0)" class="key held keypos-31">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
-<text x="0" y="0" class="key held tap">L2</text>
-<text x="0" y="30" class="key held hold">NUM</text>
+<a href="#L_NUM">
+<text x="0" y="0" class="key held tap layer-activator">L_NUM</text>
+</a><text x="0" y="30" class="key held hold">NUM</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(529, 326) rotate(12.0)" class="key trans keypos-32">
@@ -2113,8 +2123,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(840, 308)" class="key held keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
-<text x="0" y="0" class="key held tap">L4</text>
-<text x="0" y="30" class="key held hold">ADJ</text>
+<a href="#L_CYR">
+<text x="0" y="0" class="key held tap layer-activator">L_CYR</text>
+</a><text x="0" y="30" class="key held hold">ADJ</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
@@ -2133,8 +2144,9 @@ rect.held, rect.combo.held, .key.held rect.key {
 <path d="M642,433 h-192 a6.0,6.0 0 0 1 -6.0,-6.0 v-88" class="combo"/>
 <path d="M642,433 h192 a6.0,6.0 0 0 0 6.0,-6.0 v-93" class="combo"/>
 <rect rx="7" ry="7" x="615" y="406" width="55" height="55" class="combo"/>
-<text x="642" y="433" class="combo tap">L5</text>
-</g>
+<a href="#L_SYS">
+<text x="642" y="433" class="combo tap layer-activator">L_SYS</text>
+</a></g>
 </g>
 </g>
 </svg>

@@ -9,15 +9,15 @@ from pathlib import Path
 
 
 def inject_layer_separators(svg_content: str) -> str:
-    """Inject a horizontal separator line at the top of each layer group after L0."""
+    """Inject a horizontal separator line at the top of each layer group after L_BASE."""
     # Pattern matching layer groups: <g transform="translate(20, Y)" class="layer-NAME">
     pattern = re.compile(r'(<g transform="translate\(20,\s*\d+\)" class="layer-([^"]+)">)')
 
     def replacer(match):
         full_tag = match.group(1)
         layer_name = match.group(2)
-        # Skip the base layer (L0) - separators only go BETWEEN layers
-        if "L0" in layer_name:
+        # Skip the base layer (L_BASE) - separators only go BETWEEN layers
+        if "L_BASE" in layer_name:
             return full_tag
 
         separator = '\n<line x1="0" y1="15" x2="1200" y2="15" class="layer-separator"/>'

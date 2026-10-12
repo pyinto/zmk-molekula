@@ -11,11 +11,11 @@ from pathlib import Path
 import yaml
 
 HELD_KEYS_BY_LAYER = {
-    "L1 - SYM": [34],
-    "L2 - NUM": [31],
-    "L3 - ADJ": [31, 34],
-    "L4 - CYR": [35],
-    "L5 - SYS": [31, 35],
+    "L_SYM": [34],
+    "L_NUM": [31],
+    "L_ADJ": [31, 34],
+    "L_CYR": [35],
+    "L_SYS": [31, 35],
 }
 
 
@@ -42,7 +42,7 @@ def main():
         data = yaml.safe_load(f)
 
     layers = data.get("layers", {})
-    base_keys = layers.get("L0 - BASE", [])
+    base_keys = layers.get("L_BASE", [])
 
     for layer_name, keys in layers.items():
         # Inject encoders
