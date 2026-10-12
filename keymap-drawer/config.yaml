@@ -113,19 +113,19 @@ parse_config:
       hold: "NUM"
 
     "&mo L3":
-      tap: L3
-      # shifted: $$mdi:layers$$
-      # hold: "CYR"
+      tap: "L3"
+      shifted: $$mdi:layers$$
+      hold: "ADJ"
 
     "&mo L4":
       tap: "L4"
       shifted: $$mdi:layers$$
-      hold: "ADJ"
+      hold: "CYR"
 
     "&sl L4":
       tap: "L4"
       shifted: $$mdi:layers$$
-      hold: "ADJ"
+      hold: "CYR"
 
     "&mo L5":
       tap: L5
@@ -143,10 +143,10 @@ parse_config:
 #       "L2 - NUM":
 #         tap: "L2"
 #
-#       "L3 - CYR":
+#       "L3 - ADJ":
 #         tap: "L3"
 #
-#       "L4 - ADJ":
+#       "L4 - CYR":
 #         tap: "L4"
 #
 #       "L5 - SYS":

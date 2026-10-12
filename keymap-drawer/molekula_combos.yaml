@@ -3,10 +3,10 @@ combos:
 
   # L3 conditional layer activation (thumbs 31 & 34)
   - p: [31, 34]
-    layers: ["L3 - CYR"]
+    layers: ["L3 - ADJ"]
     k:
       t: L3
-      # h: CYR
+      # h: ADJ
       # s: $$mdi:layers$$
     dendron: true
     align: bottom

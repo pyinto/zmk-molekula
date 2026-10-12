@@ -702,8 +702,8 @@ rect.held, rect.combo.held, .key.held rect.key {
   rx: 50px;
   ry: 50px;
   stroke: var(--color--index);
-  stroke-width: 2.5px;
-  stroke-dasharray: none;
+  stroke-width: 2px;
+  stroke-dasharray: 2, 2;
   fill: var(--color--index-20);
 }
 

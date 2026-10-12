@@ -13,8 +13,8 @@ import yaml
 HELD_KEYS_BY_LAYER = {
     "L1 - SYM": [34],
     "L2 - NUM": [31],
-    "L3 - CYR": [31, 34],
-    "L4 - ADJ": [35],
+    "L3 - ADJ": [31, 34],
+    "L4 - CYR": [35],
     "L5 - SYS": [31, 35],
 }
 

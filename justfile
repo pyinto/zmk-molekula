@@ -195,7 +195,7 @@ draw-config:
 
 # Parse keymap to YAML
 parse-keymap: draw-config
-    uvx --from keymap-drawer keymap -c "{{kd_merged_config}}" parse -l "L0 - BASE" "L1 - SYM" "L2 - NUM" "L3 - CYR" "L4 - ADJ" "L5 - SYS" -b "{{kd_base}}" -z "{{kd_keymap}}" -o "{{kd_yaml}}"
+    uvx --from keymap-drawer keymap -c "{{kd_merged_config}}" parse -l "L0 - BASE" "L1 - SYM" "L2 - NUM" "L3 - ADJ" "L4 - CYR" "L5 - SYS" -b "{{kd_base}}" -z "{{kd_keymap}}" -o "{{kd_yaml}}"
 
 # Draw keymap SVG
 draw: parse-keymap

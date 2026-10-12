@@ -89,7 +89,7 @@ layers:
     h: SYM
     s: $$mdi:layers$$
   - t: L4
-    h: ADJ
+    h: CYR
     s: $$mdi:layers$$
   - t: $$mdi:brightness-6$$
     s: +
@@ -218,7 +218,70 @@ layers:
   - s: F15
     t: $$mdi:desk-lamp$$
     h: F14
-  L3 - CYR:
+  L3 - ADJ:
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - $$mdi:volume-variant-off$$
+  - $$mdi:keyboard-f12$$
+  - $$mdi:keyboard-f7$$
+  - $$mdi:keyboard-f8$$
+  - $$mdi:keyboard-f9$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - $$mdi:keyboard-f11$$
+  - $$mdi:keyboard-f4$$
+  - $$mdi:keyboard-f5$$
+  - $$mdi:keyboard-f6$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - $$mdi:keyboard-f10$$
+  - $$mdi:keyboard-f1$$
+  - $$mdi:keyboard-f2$$
+  - $$mdi:keyboard-f3$$
+  - t: $$mdi:minus-circle-outline$$
+    type: none
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: L2
+    h: NUM
+    s: $$mdi:layers$$
+    type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: L1
+    h: SYM
+    s: $$mdi:layers$$
+    type: held
+  - t: $$mdi:layers-triple-outline$$
+    type: trans
+  - t: $$mdi:brightness-6$$
+    s: +
+    h: '-'
+  - t: $$mdi:volume-high$$
+    s: +
+    h: '-'
+  L4 - CYR:
   - Ї
   - t: $$mdi:minus-circle-outline$$
     type: none
@@ -268,69 +331,6 @@ layers:
     type: none
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - t: L2
-    h: NUM
-    s: $$mdi:layers$$
-    type: held
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: L1
-    h: SYM
-    s: $$mdi:layers$$
-    type: held
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
-  - t: $$mdi:brightness-6$$
-    s: +
-    h: '-'
-  - t: $$mdi:volume-high$$
-    s: +
-    h: '-'
-  L4 - ADJ:
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
-  - $$mdi:volume-variant-off$$
-  - $$mdi:keyboard-f12$$
-  - $$mdi:keyboard-f7$$
-  - $$mdi:keyboard-f8$$
-  - $$mdi:keyboard-f9$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - $$mdi:keyboard-f11$$
-  - $$mdi:keyboard-f4$$
-  - $$mdi:keyboard-f5$$
-  - $$mdi:keyboard-f6$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - $$mdi:keyboard-f10$$
-  - $$mdi:keyboard-f1$$
-  - $$mdi:keyboard-f2$$
-  - $$mdi:keyboard-f3$$
-  - t: $$mdi:minus-circle-outline$$
-    type: none
-  - t: $$mdi:layers-triple-outline$$
-    type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: $$mdi:layers-triple-outline$$
@@ -340,7 +340,7 @@ layers:
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: L4
-    h: ADJ
+    h: CYR
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:brightness-6$$
@@ -425,7 +425,7 @@ layers:
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: L4
-    h: ADJ
+    h: CYR
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:brightness-6$$
