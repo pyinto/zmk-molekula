@@ -89,7 +89,7 @@ layers:
     h: SYM
     s: $$mdi:layers$$
   - t: L4
-    h: CYR
+    h: ADJ
     s: $$mdi:layers$$
   - t: $$mdi:brightness-6$$
     s: +
@@ -340,7 +340,7 @@ layers:
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: L4
-    h: CYR
+    h: ADJ
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:brightness-6$$
@@ -425,7 +425,7 @@ layers:
   - t: $$mdi:layers-triple-outline$$
     type: trans
   - t: L4
-    h: CYR
+    h: ADJ
     s: $$mdi:layers$$
     type: held
   - t: $$mdi:brightness-6$$

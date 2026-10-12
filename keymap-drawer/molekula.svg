@@ -998,14 +998,17 @@ rect.held, rect.combo.held, .key.held rect.key {
 
 .keypos-36 rect.key,
 .keypos-37 rect.key {
-  rx: 50px;
-  ry: 50px;
+  rx: 100px;
+  ry: 100px;
   stroke: var(--color--index);
   stroke-width: 2px;
   stroke-dasharray: 2, 2;
   fill: var(--color--index-20);
-}
 
+  /* Scale the circle around its center (0, 0) without moving the group */
+  transform-origin: 0 0;
+  transform: scale(1.15);
+}
 .keypos-36 .tap,
 .keypos-37 .tap {
   font-size: 14px;
@@ -1027,6 +1030,17 @@ rect.held, rect.combo.held, .key.held rect.key {
   font-weight: bold;
   fill: var(--color--catppuccin--red);
   translate: 0px -6px;
+}
+
+
+/* Move left knob */
+.keypos-36 {
+    translate: -5px 0px;
+}
+
+/* Move right knob */
+.keypos-37 {
+  translate: 5px 0px;
 }
 </style>
 <g transform="translate(20, 0)" class="layer-L0 - BASE">
@@ -1225,7 +1239,7 @@ rect.held, rect.combo.held, .key.held rect.key {
 <g transform="translate(882, 290)" class="key keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key"/>
 <text x="0" y="0" class="key tap">L4</text>
-<text x="0" y="30" class="key hold">CYR</text>
+<text x="0" y="30" class="key hold">ADJ</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
@@ -1902,7 +1916,7 @@ rect.held, rect.combo.held, .key.held rect.key {
 <g transform="translate(882, 290)" class="key held keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
 <text x="0" y="0" class="key held tap">L4</text>
-<text x="0" y="30" class="key held hold">CYR</text>
+<text x="0" y="30" class="key held hold">ADJ</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
@@ -2079,7 +2093,7 @@ rect.held, rect.combo.held, .key.held rect.key {
 <g transform="translate(882, 290)" class="key held keypos-35">
 <rect rx="7" ry="7" x="-38" y="-38" width="76" height="76" class="key held"/>
 <text x="0" y="0" class="key held tap">L4</text>
-<text x="0" y="30" class="key held hold">CYR</text>
+<text x="0" y="30" class="key held hold">ADJ</text>
 <use href="#mdi:layers" xlink:href="#mdi:layers" x="-10" y="-30" height="21" width="21.0" class="key held shifted glyph mdi:layers"/>
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
