@@ -22,7 +22,7 @@ HELD_KEYS_BY_LAYER = {
 def get_encoder_bindings(layer_name: str) -> tuple[dict, dict]:
     """Return (left_knob, right_knob) bindings for a given layer."""
     if "SYM" in layer_name or "NUM" in layer_name:
-        knob_l = {"s": "F14", "t": "$$mdi:desk-lamp$$", "h": "F15"}
+        knob_l = {"s": "F16", "t": "$$mdi:thermometer$$", "h": "F17"}
         knob_r = {"s": "F15", "t": "$$mdi:desk-lamp$$", "h": "F14"}
     else:
         # BASE, CYR, ADJ, SYS: Brightness on left, Volume on right
