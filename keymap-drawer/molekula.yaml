@@ -212,12 +212,12 @@ layers:
     type: trans
   - t: $$mdi:layers-triple-outline$$
     type: trans
-  - s: F16
-    t: $$mdi:thermometer$$
-    h: F17
-  - s: F15
-    t: $$mdi:desk-lamp$$
-    h: F14
+  - s: F13
+    t: $$mdi:palette$$
+    h: F18
+  - s: F19
+    t: $$mdi:ceiling-light$$
+    h: F20
   L3 - ADJ:
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$

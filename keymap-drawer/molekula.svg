@@ -51,6 +51,9 @@
 <svg id="mdi:brightness-6">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-6" viewBox="0 0 24 24"><path d="M12,18V6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" /></svg>
 </svg>
+<svg id="mdi:ceiling-light">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-ceiling-light" viewBox="0 0 24 24"><path d="M8,9H11V4H13V9H16L20,17H4L8,9M14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18H14Z" /></svg>
+</svg>
 <svg id="mdi:desk-lamp">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-desk-lamp" viewBox="0 0 24 24"><path d="M10.85,2L9.18,4.5L10.32,5.25L7.14,10C7.1,10 7.05,10 7,10A2,2 0 0,0 5,12C5,12.94 5.66,13.75 6.58,13.95L10.62,20H7V22H17V20H13L8.53,13.28C8.83,12.92 9,12.47 9,12C9,11.7 8.93,11.4 8.8,11.13L12,6.37C11.78,8.05 12.75,9.89 14.45,11L18.89,4.37C17.2,3.24 15.12,3.04 13.65,3.87L10.85,2M18.33,7L16.67,9.5C17.35,9.95 18.29,9.77 18.75,9.08C19.21,8.39 19,7.46 18.33,7Z" /></svg>
 </svg>
@@ -134,6 +137,9 @@
 </svg>
 <svg id="mdi:numeric-5-circle">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-5-circle" viewBox="0 0 24 24"><path d="M9,7V13H13V15H9V17H13A2,2 0 0,0 15,15V13A2,2 0 0,0 13,11H11V9H15V7H9M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>
+</svg>
+<svg id="mdi:palette">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-palette" viewBox="0 0 24 24"><path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z" /></svg>
 </svg>
 <svg id="mdi:play-pause">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
@@ -1599,15 +1605,15 @@ rect.held, rect.combo.held, .key.held rect.key {
 </g>
 <g transform="translate(544, 140)" class="key keypos-36">
 <rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
-<use href="#mdi:thermometer" xlink:href="#mdi:thermometer" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:thermometer"/>
-<text x="0" y="38" class="key hold">F17</text>
-<text x="0" y="-38" class="key shifted">F16</text>
+<use href="#mdi:palette" xlink:href="#mdi:palette" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:palette"/>
+<text x="0" y="38" class="key hold">F18</text>
+<text x="0" y="-38" class="key shifted">F13</text>
 </g>
 <g transform="translate(656, 140)" class="key keypos-37">
 <rect rx="7" ry="7" x="-46" y="-46" width="92" height="92" class="key"/>
-<use href="#mdi:desk-lamp" xlink:href="#mdi:desk-lamp" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:desk-lamp"/>
-<text x="0" y="38" class="key hold">F14</text>
-<text x="0" y="-38" class="key shifted">F15</text>
+<use href="#mdi:ceiling-light" xlink:href="#mdi:ceiling-light" x="-12" y="-12" height="25" width="25.0" class="key tap glyph mdi:ceiling-light"/>
+<text x="0" y="38" class="key hold">F20</text>
+<text x="0" y="-38" class="key shifted">F19</text>
 </g>
 </g>
 </g>
