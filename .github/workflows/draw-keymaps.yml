@@ -1,22 +1,42 @@
-# Example for using the keymap-drawer ZMK user config workflow
-name: Draw ZMK keymaps
+name: Draw Molekula TWS keymap
+
 on:
-  workflow_dispatch: # can be triggered manually
-  push: # automatically run on changes to following paths
+  workflow_dispatch:
+  push:
     paths:
-      - "boards/shields/*/*.keymap"
-      - "keymap-drawer/config.yaml"
-      - "keymap-drawer/molekula.json"
+      - "boards/shields/molekula_tws/*.keymap"
+      - "keymap-drawer/**"
+      - "!keymap-drawer/molekula.svg"
+      - "!keymap-drawer/molekula.yaml"
+      - "justfile"
+      - ".github/workflows/draw-keymaps.yml"
+
+concurrency:
+  group: draw-molekula-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    runs-on: ubuntu-latest
     permissions:
-      contents: write # allow workflow to commit to the repo
-    with:
-      amend_commit: true
-      keymap_patterns: "boards/shields/molekula/*.keymap" # path to the keymaps to parse
-      config_path: "keymap-drawer/config.yaml" # config file, ignored if not exists
-      output_folder: "keymap-drawer" # path to save produced SVG and keymap YAML files
-      parse_args: "" # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "molekula:'-j keymap-drawer/molekula.json'" # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: astral-sh/setup-uv@v6
+      - uses: extractions/setup-just@v3
+      - name: Render current TWS keymap
+        run: |
+          cp .env.example .env
+          just draw
+      - name: Commit updated drawing
+        run: |
+          git add keymap-drawer/molekula.yaml keymap-drawer/molekula.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update Molekula TWS keymap visualization"
+          git push

@@ -1,0 +1,24 @@
+# Supplementary combos configuration for Molekula layout
+combos:
+
+  # L_ADJ conditional layer activation (thumbs 31 & 34)
+  - p: [31, 34]
+    layers: ["L_ADJ"]
+    k:
+      t: L_ADJ
+      # h: ADJ
+      # s: $$mdi:layers$$
+    dendron: true
+    align: bottom
+    offset: 1
+
+  # L_SYS sys layer activation (thumbs 31 & 35)
+  - p: [31, 35]
+    layers: ["L_SYS"]
+    k:
+      t: L_SYS
+      # h: SYS
+      # s: $$mdi:layers$$
+    dendron: true
+    align: bottom
+    offset: 1

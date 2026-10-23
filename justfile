@@ -153,3 +153,44 @@ clean:
 clean-all: clean
     rm -rf "{{ws_dir}}"
 
+# -----------------------------------------------------------------------------
+# Keymap Visualization
+# -----------------------------------------------------------------------------
+kd_dir           := repo_dir / "keymap-drawer"
+kd_config        := kd_dir / "config.yaml"
+kd_css           := kd_dir / "config.css"
+kd_merged_config := kd_dir / "config-merged.yaml"
+kd_base          := kd_dir / "molekula_base.yaml"
+kd_combos        := kd_dir / "molekula_combos.yaml"
+kd_keymap        := repo_dir / "boards" / "shields" / "molekula_tws" / "molekula_tws.keymap"
+kd_layout_json   := kd_dir / "molekula.json"
+kd_yaml          := kd_dir / "molekula.yaml"
+kd_svg           := kd_dir / "molekula.svg"
+kd_inject        := kd_dir / "inject_encoders.py"
+kd_inject_sep    := kd_dir / "inject_separators.py"
+
+# Prepare merged config with embedded CSS styles
+draw-config:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    temp_css=$(mktemp)
+    sed 's/^/    /' "{{kd_css}}" > "$temp_css"
+    awk '/svg_extra_style: \|/ {print; while(getline < "'"$temp_css"'") print; next} 1' "{{kd_config}}" > "{{kd_merged_config}}"
+    rm -f "$temp_css"
+
+# Parse keymap to YAML
+parse-keymap: draw-config
+    uvx --from keymap-drawer keymap -c "{{kd_merged_config}}" parse -l "L_BASE" "L_SYM" "L_NUM" "L_ADJ" "L_CYR" "L_SYS" -b "{{kd_base}}" -z "{{kd_keymap}}" -o "{{kd_yaml}}"
+
+# Draw keymap SVG
+draw: parse-keymap
+    uv run --with pyyaml python3 "{{kd_inject}}" "{{kd_yaml}}"
+    uvx --from keymap-drawer keymap -c "{{kd_merged_config}}" draw -j "{{kd_layout_json}}" "{{kd_yaml}}" "{{kd_combos}}" -o "{{kd_svg}}"
+    python3 "{{kd_inject_sep}}" "{{kd_svg}}"
+    python3 "{{kd_dir}}/normalize_glyphs.py" "{{kd_svg}}"
+    rm -f "{{kd_merged_config}}"
+    @echo "Generated {{kd_svg}}"
+
+# Open rendered SVG in default viewer / browser
+show-keymap: draw
+    firefox "{{kd_svg}}"
