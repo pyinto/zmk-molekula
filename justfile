@@ -60,7 +60,7 @@ build-left:
 build-reset:
     just build settings_reset settings_reset
 
-# Build both keyboard halves and archive outputs
+# Build both keyboard halves, regenerate keymap SVG, and archive outputs
 build-all:
     #!/usr/bin/env bash
     set -euo pipefail
@@ -72,6 +72,7 @@ build-all:
     {
         just build-right
         just build-left
+        just draw
     } 2>&1 | tee "$out/build.log"
 
     cp "{{build_dir}}/molekula_tws_right/zephyr/zmk.uf2" "$out/molekula_tws_right.uf2"
