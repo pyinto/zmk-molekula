@@ -1,7 +1,8 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_MOLEKULA_TWS_LEFT
+# Right half is the split central (host connection, ZMK Studio, battery proxy)
+if SHIELD_MOLEKULA_TWS_RIGHT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME

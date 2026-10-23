@@ -1,3 +1,6 @@
 build:
+  cmake: .
+  depends:
+    - zmk-component-underdongle
   settings:
     board_root: .
