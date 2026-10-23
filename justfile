@@ -10,6 +10,7 @@ repo_dir    := justfile_directory()
 ws_dir      := repo_dir / ".zmk"
 build_dir   := repo_dir / "build"
 results_dir := repo_dir / "build-results"
+backup_dir  := repo_dir / "backups"
 
 # Docker run inside the isolated .zmk workspace
 docker_ws_run := "docker run --rm -t -v '" + ws_dir + "':/workspace -v '" + repo_dir + "':/repo -w /workspace -e GIT_CONFIG_COUNT=1 -e GIT_CONFIG_KEY_0=safe.directory -e GIT_CONFIG_VALUE_0='*' " + image
@@ -77,6 +78,72 @@ build-all:
     cp "{{build_dir}}/molekula_tws_left/zephyr/zmk.uf2" "$out/molekula_tws_left.uf2"
 
     echo "Build complete. UF2 binaries saved in: $out"
+
+# Flash existing firmware for the mounted registered half (or specify a side)
+flash side="auto":
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    selection=$(python3 "{{repo_dir}}/scripts/uf2_device.py" find "{{side}}" --with-side)
+    IFS=$'\t' read -r selected_side detected_vol <<< "$selection"
+
+    case "$selected_side" in
+      right) fw="{{build_dir}}/molekula_tws_right/zephyr/zmk.uf2" ;;
+      left)  fw="{{build_dir}}/molekula_tws_left/zephyr/zmk.uf2" ;;
+      reset) fw="{{build_dir}}/settings_reset/zephyr/zmk.uf2" ;;
+      *)
+        echo "Usage: just flash [right | left | reset]" >&2
+        exit 2
+        ;;
+    esac
+
+    test -f "$fw" || {
+        echo "Error: Firmware file not found: $fw" >&2
+        echo "Run 'just build-$selected_side' first." >&2
+        exit 1
+    }
+
+    label=$(python3 "{{repo_dir}}/scripts/uf2_device.py" label "$selected_side")
+    echo "=== $label — FLASHING === $detected_vol | $fw"
+    cp -X "$fw" "$detected_vol/"
+    echo "=== $label — TRANSFER SUCCEEDED === $detected_vol"
+
+flash-right:
+    just flash right
+
+flash-left:
+    just flash left
+
+flash-reset:
+    just flash reset
+
+# Flash both halves, central first; optionally rebuild with --rebuild
+reflash *args:
+    @python3 "{{repo_dir}}/scripts/reflash.py" {{args}}
+
+# Register one physical half in bootloader mode (saved in local .env)
+register side:
+    python3 "{{repo_dir}}/scripts/uf2_device.py" register "{{side}}"
+
+# List connected UF2 bootloader drives and their USB serial numbers
+list-devices:
+    python3 "{{repo_dir}}/scripts/uf2_device.py" list
+
+# Backup currently installed firmware from UF2 bootloader drive
+backup side:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    mkdir -p "{{backup_dir}}"
+    detected_vol=$(python3 "{{repo_dir}}/scripts/uf2_device.py" find "{{side}}")
+
+    target_file="{{backup_dir}}/$(date +%Y%m%d-%H%M%S)__{{side}}.uf2"
+    if [ -f "$detected_vol/CURRENT.UF2" ]; then
+        cp -X "$detected_vol/CURRENT.UF2" "$target_file"
+        echo "Backed up current firmware to $target_file"
+    else
+        echo "Warning: No CURRENT.UF2 found on $detected_vol to back up."
+    fi
 
 # Clean local build outputs
 clean:
